@@ -1,1 +1,36 @@
+{#- Datasets, at admin: the data role's (meridian/roles/data/datasets.html),
+    with the NY Fed's nuance at its blocks only -- the objects it could not
+    read, how many wants there are past the latest few drawn, "Lag" as a
+    column of "Served" (the median published-minus-valid time), and
+    "Records": each of the nine referential records with the deployment's
+    instrument for it, paged, under the notice and disclaimer the NY Fed's
+    terms ask for (the spec's §5 and §7). No rate: rates are the reading
+    roles'. -#}
 {% extends "meridian/roles/data/datasets.html" %}
+{% import "meridian/kit.html" as kit %}
+{% block status %}{{ kit.status({"state": state[0], "label": state[1], "detail": state[2], "at": checked_at, "at_label": "Last checked"}) }}{% endblock %}
+{% block vendor_notices %}
+{% if data.unread %}<div class="notice warn" role="status">The API stated a rate the plugin could not read, not recorded: {{ data.unread|join("; ") }}</div>{% endif %}
+{% if wants > data.wants|length %}<p class="muted">The latest {{ data.wants|length }} of {{ wants }} wants are shown.</p>{% endif %}
+{% endblock %}
+{% block vendor_columns %}{% if row is none %}<th class="wide-only">Lag</th>{% else %}{% set lag = data.lag|selectattr("dataset", "equalto", row.dataset)|first %}<td class="wide-only">{{ lag.median if lag and lag.rates else "None yet" }}</td>{% endif %}{% endblock %}
+{% block vendor_sections %}
+<section class="panel">
+<h2>Records</h2>
+{% if data.records|selectattr("latest_day")|list or data.records|selectattr("instrument_id")|list %}
+<details class="row-detail" name="notice"><summary>Source: Federal Reserve Bank of New York. Its notice and disclaimer</summary><div class="row-detail-pop"><p>{{ data.attribution }}</p><p>{{ data.revisions }} revisions recorded as next versions.</p></div></details>
+<om-pager>
+<table class="one-line">
+<thead><tr><th>Code</th><th class="wide-only">Rows</th><th class="wide-only">Latest</th><th>Instrument</th><th class="more"><span class="visually-hidden">Details</span></th></tr></thead>
+<tbody>
+{% for r in data.records %}
+<tr data-code="{{ r.code }}"><td>{{ r.code }}</td><td class="wide-only">{{ r.rows }}</td><td class="wide-only">{{ (r.latest_day|day) if r.latest_day else "Not read yet" }}</td><td>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}<span class="badge warn">{{ r.miss or "not yet resolved" }}</span>{% endif %}</td><td class="more"><details class="row-detail" name="records"><summary aria-label="Details of {{ r.code }}">…</summary><div class="row-detail-pop"><h3>{{ r.name }}</h3><dl><dt>Symbol</dt><dd><code>{{ r.code }}</code> at <code>nyfed</code></dd><dt>Rows</dt><dd>{{ r.rows }}</dd><dt>Latest</dt><dd>{{ ("effective " ~ (r.latest_day|day)) if r.latest_day else "Not read yet" }}</dd><dt>The deployment's record</dt><dd>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>, the platform's referential record{% else %}None: {{ r.miss or "not yet resolved" }}, reported missing; its rates wait until it is held{% endif %}</dd></dl></div></details></td></tr>
+{% endfor %}
+</tbody>
+</table>
+</om-pager>
+{% else %}
+<p class="muted"><strong>No rates read yet:</strong> the nine records appear with the first read.</p>
+{% endif %}
+</section>
+{% endblock %}

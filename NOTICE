@@ -1,0 +1,13 @@
+plugin-ny-fed
+Copyright 2026 Societal Lab Inc.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+The data this plugin reads are the Federal Reserve Bank of New York's,
+published through its markets data API. SOFR, EFFR, OBFR, TGCR, BGCR, the
+SOFR Averages and the SOFR Index are subject to the Terms of Use posted at
+newyorkfed.org; the New York Fed is not responsible for their publication by
+this plugin and has no liability for their use. SOFR and BGCR are calculated
+using data licensed to the New York Fed by DTCC Solutions LLC. This project
+is not affiliated with the Federal Reserve Bank of New York, which does not
+sanction or endorse it.
