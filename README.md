@@ -1,51 +1,80 @@
-# ny-fed
+# plugin-ny-fed
 
-A Meridian data plugin, made by `meridian plugin new --role data`: it puts a
-vendor's prices into the deployment's lake.
+The Federal Reserve Bank of New York's reference rates for
+[Open Meridian](https://open-meridian.com): an Open Meridian plugin that puts
+the NY Fed's
+[reference rates](https://www.newyorkfed.org/markets/reference-rates) --
+SOFR, EFFR, OBFR, TGCR and BGCR, the SOFR 30, 90 and 180-day averages and
+the SOFR Index -- into a deployment's lake as rates, each business day's
+when the NY Fed publishes it, with its history from 2000. It reads the NY
+Fed's markets data API, and holds the `data` role, a data plugin. This is
+release 0.1.0, not released yet. How to set it up and use it is in
+[docs/](docs/README.md); how a plugin like it is built is documented at
+[open-meridian.dev](https://open-meridian.dev).
 
-It runs beside a sidecar in a Meridian deployment and reaches nothing of the
-deployment's else. What it may publish and subscribe to comes from the roles
-`pyproject.toml` declares, once a deployment admin approves them when it is
-launched, never from its code. Its vendor is its own to reach: `vendor.py`
-stands in for one, answering from responses written into it, so it runs
-anywhere until you replace it with your vendor's client.
+It is built on the SDK it pins, `open-meridian==0.32.2`, which declares
+contract v27, the lake's rates slice (meridian-design
+`spec/a-public-rates-and-filings-data-plugin.md`, "plugin-ny-fed").
 
-Put it in a deployment that `meridian connect` signed you in to:
+## What it records
 
-    meridian plugin upload
-    meridian plugin launch ny-fed 0.1.0 --instance ny-fed
+- **One dataset, `<instance>:nyfed_rates`:** rates, pushed when each day's
+  appear and pulled for any past day the lake wants; daily; history from 3
+  July 2000; New York's day, ending at midnight; no calendar yet; no venue;
+  kept, with the NY Fed's notice.
+- **Nine records**, the platform's seeded referential records, each found by
+  the NY Fed's code as a symbol at `nyfed`: SOFR, EFFR, OBFR, TGCR and BGCR,
+  each a fixing with its percentiles, its volume and the money market's
+  convention (actual/360, simple); the SOFR 30, 90 and 180-day averages,
+  each an average; the SOFR Index, an index level. Never minted; a record
+  not held is reported missing, and its rates wait.
+- **Exact.** Every figure is a decimal from the text the API wrote.
+- **A revision is the next version** of its row, never in place.
+- **A published time only where seen:** the NY Fed states none, so a rate
+  has one only when the plugin saw it appear on its day of publication.
+- **Every answer kept** as received, from the first day, in the storage the
+  deployment grants, and named by each row it was first read into.
 
-A deployment admin then licenses its dataset, and entitles the plugins that
-may read it, on the dashboard's Data sources page. On a deployment installed
-for development, run it as you write it, each save running in about a second:
+Its pages, under Manage alone, are the data role's, the same on every data
+plugin, and show how it reaches the NY Fed and what it serves, never a rate:
+**Connection** (`read_connection`, "No key needed", "Does not stream", and
+its Sources) and **Datasets** (`read_datasets`, with its Lag and Records),
+each the same through the deployment's MCP.
 
-    meridian plugin dev --instance ny-fed
+## Checking it
 
-Hold it to the rules every Meridian plugin is built to, and run its tests:
+    make ci-local                                  # lint, tests, plugin check, image, e2e: the pre-push gate
+    make preview SHOTS=<dir>                       # each page in a browser with the kit, at 375, 582 and 1280 px
 
-    pip install -e . pytest
-    meridian plugin check --verified --run-tests
+**The data suite.** `tests/test_suite.py` runs the SDK's suite at contract
+v27 on the plugin's own conversion. The rates cases the NY Fed presents pass
+(a fixing with its percentiles, a same-day revision, an index level), with
+liveness, wants, licences and misses. Every other case is about something
+the NY Fed never states -- curves and tenors, prices, trades, quotes, venues,
+outcomes -- or about latency (from contract v28), and is not presented, with
+why. `an-exact-price` and `a-want-recorded-against`
+are about closes from SDK 0.32.1 (ruling 537): with every other case a
+rates-only plugin never presents, they are the SDK's `RATES_NOT_PRESENTED`
+(ruling 538).
 
-Its tests run the data suite the SDK carries (`tests/test_suite.py`): each
-case of the role mapped to one of the vendor's responses and run through the
-plugin's own conversion (`convert.py`). A plugin holding `data` is verified
-for it only by passing every case: keep each passing as you replace the
-vendor. A case about trades or quotes, which its daily dataset never
-publishes, is marked not presented, with why, until a dataset declares them. Every price is parsed from the vendor's text as a `Decimal`, never
-through a `float`; every subject and venue is resolved before a row names
-it, and what does not resolve is reported.
+## The terms, summarised
 
-Its catalogue (`declaration.py`) declares the dataset it serves: its key,
-vendor, data types, how its rows arrive, its cadence, history, the vendor's
-terms and its day. Its pages are under the dashboard's Manage (`admin`):
-Connection, whether the vendor answers and what was asked of it, and
-Datasets, what it serves and the standing wants it keeps current. It shows
-no price: prices are the reading roles'. Each page is also a read tool for
-an agent an admin delegates to, `read_connection` and `read_datasets`. They
-are built on Open Meridian's plugin UI kit, which the dashboard serves on the
-plugin's own host at `/.meridian/ui/`.
+Not legal advice; read the NY Fed's own words before relying on them.
 
-`AGENTS.md` teaches any coding agent to build pages with the kit, and the same
-live loop; `CLAUDE.md` and the `develop-live` skill under `.claude/` lead
-Claude Code to it. Commit them with the plugin, so whoever works on it next
-has them too; `.dockerignore` keeps them out of its image.
+- **Free to use, store and pass on, with its notice.** The NY Fed's
+  [Terms of Use](https://www.newyorkfed.org/privacy/termsofuse) allow
+  downloading, storing and redistributing its content, with the notice that
+  the rates are subject to them, its disclaimer, and no more restrictive
+  terms downstream. So the dataset's default licence is kept, with derived
+  use and display, no limit on retention, and not one person's terms; the
+  notice is shown on the Datasets page. A deployment's licence on its Data
+  sources page confirms or replaces it.
+- **DTCC data.** SOFR and BGCR are calculated using data licensed to the NY
+  Fed by DTCC Solutions LLC.
+- **No endorsement.** This project is not affiliated with the Federal
+  Reserve Bank of New York, which does not sanction or endorse it.
+
+## Licence
+
+Apache-2.0 (LICENSE, NOTICE). The NY Fed's answer under
+`src/ny_fed/responses/` is its reference rates as received on 2026-10-23.

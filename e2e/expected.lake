@@ -1,0 +1,521 @@
+row|ny-fed:nyfed_rates|rate|100|nyfed:average:-:act_360:simple:2026-08-05@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-05|91|false
+row|ny-fed:nyfed_rates|rate|101|nyfed:average:-:act_360:simple:2026-08-05@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-05|92|false
+row|ny-fed:nyfed_rates|rate|102|nyfed:index_level:-:act_360:simple:2026-08-05@SOFR Index|1|SOFR Index|3||2026-08-05|93|false
+row|ny-fed:nyfed_rates|rate|103|nyfed:fixing:-:act_360:simple:2026-08-05@TGCR|1|TGCR|1||2026-08-05|94|false
+row|ny-fed:nyfed_rates|rate|104|nyfed:fixing:-:act_360:simple:2026-08-06@BGCR|1|BGCR|1||2026-08-06|95|false
+row|ny-fed:nyfed_rates|rate|105|nyfed:fixing:-:act_360:simple:2026-08-06@EFFR|1|EFFR|1||2026-08-06|96|false
+row|ny-fed:nyfed_rates|rate|106|nyfed:fixing:-:act_360:simple:2026-08-06@OBFR|1|OBFR|1||2026-08-06|97|false
+row|ny-fed:nyfed_rates|rate|107|nyfed:fixing:-:act_360:simple:2026-08-06@SOFR|1|SOFR|1||2026-08-06|98|false
+row|ny-fed:nyfed_rates|rate|108|nyfed:average:-:act_360:simple:2026-08-06@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-06|99|false
+row|ny-fed:nyfed_rates|rate|109|nyfed:average:-:act_360:simple:2026-08-06@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-06|100|false
+row|ny-fed:nyfed_rates|rate|10|nyfed:fixing:-:act_360:simple:2026-10-14@BGCR|1|BGCR|1||2026-10-14|1|false
+row|ny-fed:nyfed_rates|rate|110|nyfed:average:-:act_360:simple:2026-08-06@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-06|101|false
+row|ny-fed:nyfed_rates|rate|111|nyfed:index_level:-:act_360:simple:2026-08-06@SOFR Index|1|SOFR Index|3||2026-08-06|102|false
+row|ny-fed:nyfed_rates|rate|112|nyfed:fixing:-:act_360:simple:2026-08-06@TGCR|1|TGCR|1||2026-08-06|103|false
+row|ny-fed:nyfed_rates|rate|113|nyfed:fixing:-:act_360:simple:2026-08-07@BGCR|1|BGCR|1||2026-08-07|104|false
+row|ny-fed:nyfed_rates|rate|114|nyfed:fixing:-:act_360:simple:2026-08-07@EFFR|1|EFFR|1||2026-08-07|105|false
+row|ny-fed:nyfed_rates|rate|115|nyfed:fixing:-:act_360:simple:2026-08-07@OBFR|1|OBFR|1||2026-08-07|106|false
+row|ny-fed:nyfed_rates|rate|116|nyfed:fixing:-:act_360:simple:2026-08-07@SOFR|1|SOFR|1||2026-08-07|107|false
+row|ny-fed:nyfed_rates|rate|117|nyfed:average:-:act_360:simple:2026-08-07@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-07|108|false
+row|ny-fed:nyfed_rates|rate|118|nyfed:average:-:act_360:simple:2026-08-07@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-07|109|false
+row|ny-fed:nyfed_rates|rate|119|nyfed:average:-:act_360:simple:2026-08-07@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-07|110|false
+row|ny-fed:nyfed_rates|rate|11|nyfed:fixing:-:act_360:simple:2026-10-14@EFFR|1|EFFR|1||2026-10-14|2|false
+row|ny-fed:nyfed_rates|rate|120|nyfed:index_level:-:act_360:simple:2026-08-07@SOFR Index|1|SOFR Index|3||2026-08-07|111|false
+row|ny-fed:nyfed_rates|rate|121|nyfed:fixing:-:act_360:simple:2026-08-07@TGCR|1|TGCR|1||2026-08-07|112|false
+row|ny-fed:nyfed_rates|rate|122|nyfed:fixing:-:act_360:simple:2026-08-10@BGCR|1|BGCR|1||2026-08-10|113|false
+row|ny-fed:nyfed_rates|rate|123|nyfed:fixing:-:act_360:simple:2026-08-10@EFFR|1|EFFR|1||2026-08-10|114|false
+row|ny-fed:nyfed_rates|rate|124|nyfed:fixing:-:act_360:simple:2026-08-10@OBFR|1|OBFR|1||2026-08-10|115|false
+row|ny-fed:nyfed_rates|rate|125|nyfed:fixing:-:act_360:simple:2026-08-10@SOFR|1|SOFR|1||2026-08-10|116|false
+row|ny-fed:nyfed_rates|rate|126|nyfed:average:-:act_360:simple:2026-08-10@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-10|117|false
+row|ny-fed:nyfed_rates|rate|127|nyfed:average:-:act_360:simple:2026-08-10@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-10|118|false
+row|ny-fed:nyfed_rates|rate|128|nyfed:average:-:act_360:simple:2026-08-10@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-10|119|false
+row|ny-fed:nyfed_rates|rate|129|nyfed:index_level:-:act_360:simple:2026-08-10@SOFR Index|1|SOFR Index|3||2026-08-10|120|false
+row|ny-fed:nyfed_rates|rate|12|nyfed:fixing:-:act_360:simple:2026-10-14@OBFR|1|OBFR|1||2026-10-14|3|false
+row|ny-fed:nyfed_rates|rate|130|nyfed:fixing:-:act_360:simple:2026-08-10@TGCR|1|TGCR|1||2026-08-10|121|false
+row|ny-fed:nyfed_rates|rate|131|nyfed:fixing:-:act_360:simple:2026-08-11@BGCR|1|BGCR|1||2026-08-11|122|false
+row|ny-fed:nyfed_rates|rate|132|nyfed:fixing:-:act_360:simple:2026-08-11@EFFR|1|EFFR|1||2026-08-11|123|false
+row|ny-fed:nyfed_rates|rate|133|nyfed:fixing:-:act_360:simple:2026-08-11@OBFR|1|OBFR|1||2026-08-11|124|false
+row|ny-fed:nyfed_rates|rate|134|nyfed:fixing:-:act_360:simple:2026-08-11@SOFR|1|SOFR|1||2026-08-11|125|false
+row|ny-fed:nyfed_rates|rate|135|nyfed:average:-:act_360:simple:2026-08-11@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-11|126|false
+row|ny-fed:nyfed_rates|rate|136|nyfed:average:-:act_360:simple:2026-08-11@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-11|127|false
+row|ny-fed:nyfed_rates|rate|137|nyfed:average:-:act_360:simple:2026-08-11@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-11|128|false
+row|ny-fed:nyfed_rates|rate|138|nyfed:index_level:-:act_360:simple:2026-08-11@SOFR Index|1|SOFR Index|3||2026-08-11|129|false
+row|ny-fed:nyfed_rates|rate|139|nyfed:fixing:-:act_360:simple:2026-08-11@TGCR|1|TGCR|1||2026-08-11|130|false
+row|ny-fed:nyfed_rates|rate|13|nyfed:fixing:-:act_360:simple:2026-10-14@SOFR|1|SOFR|1||2026-10-14|4|false
+row|ny-fed:nyfed_rates|rate|140|nyfed:fixing:-:act_360:simple:2026-08-12@BGCR|1|BGCR|1||2026-08-12|131|false
+row|ny-fed:nyfed_rates|rate|141|nyfed:fixing:-:act_360:simple:2026-08-12@EFFR|1|EFFR|1||2026-08-12|132|false
+row|ny-fed:nyfed_rates|rate|142|nyfed:fixing:-:act_360:simple:2026-08-12@OBFR|1|OBFR|1||2026-08-12|133|false
+row|ny-fed:nyfed_rates|rate|143|nyfed:fixing:-:act_360:simple:2026-08-12@SOFR|1|SOFR|1||2026-08-12|134|false
+row|ny-fed:nyfed_rates|rate|144|nyfed:average:-:act_360:simple:2026-08-12@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-12|135|false
+row|ny-fed:nyfed_rates|rate|145|nyfed:average:-:act_360:simple:2026-08-12@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-12|136|false
+row|ny-fed:nyfed_rates|rate|146|nyfed:average:-:act_360:simple:2026-08-12@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-12|137|false
+row|ny-fed:nyfed_rates|rate|147|nyfed:index_level:-:act_360:simple:2026-08-12@SOFR Index|1|SOFR Index|3||2026-08-12|138|false
+row|ny-fed:nyfed_rates|rate|148|nyfed:fixing:-:act_360:simple:2026-08-12@TGCR|1|TGCR|1||2026-08-12|139|false
+row|ny-fed:nyfed_rates|rate|149|nyfed:fixing:-:act_360:simple:2026-08-13@BGCR|1|BGCR|1||2026-08-13|140|false
+row|ny-fed:nyfed_rates|rate|14|nyfed:average:-:act_360:simple:2026-10-14@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-14|5|false
+row|ny-fed:nyfed_rates|rate|150|nyfed:fixing:-:act_360:simple:2026-08-13@EFFR|1|EFFR|1||2026-08-13|141|false
+row|ny-fed:nyfed_rates|rate|151|nyfed:fixing:-:act_360:simple:2026-08-13@OBFR|1|OBFR|1||2026-08-13|142|false
+row|ny-fed:nyfed_rates|rate|152|nyfed:fixing:-:act_360:simple:2026-08-13@SOFR|1|SOFR|1||2026-08-13|143|false
+row|ny-fed:nyfed_rates|rate|153|nyfed:average:-:act_360:simple:2026-08-13@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-13|144|false
+row|ny-fed:nyfed_rates|rate|154|nyfed:average:-:act_360:simple:2026-08-13@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-13|145|false
+row|ny-fed:nyfed_rates|rate|155|nyfed:average:-:act_360:simple:2026-08-13@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-13|146|false
+row|ny-fed:nyfed_rates|rate|156|nyfed:index_level:-:act_360:simple:2026-08-13@SOFR Index|1|SOFR Index|3||2026-08-13|147|false
+row|ny-fed:nyfed_rates|rate|157|nyfed:fixing:-:act_360:simple:2026-08-13@TGCR|1|TGCR|1||2026-08-13|148|false
+row|ny-fed:nyfed_rates|rate|158|nyfed:fixing:-:act_360:simple:2026-08-14@BGCR|1|BGCR|1||2026-08-14|149|false
+row|ny-fed:nyfed_rates|rate|159|nyfed:fixing:-:act_360:simple:2026-08-14@EFFR|1|EFFR|1||2026-08-14|150|false
+row|ny-fed:nyfed_rates|rate|15|nyfed:average:-:act_360:simple:2026-10-14@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-14|6|false
+row|ny-fed:nyfed_rates|rate|160|nyfed:fixing:-:act_360:simple:2026-08-14@OBFR|1|OBFR|1||2026-08-14|151|false
+row|ny-fed:nyfed_rates|rate|161|nyfed:fixing:-:act_360:simple:2026-08-14@SOFR|1|SOFR|1||2026-08-14|152|false
+row|ny-fed:nyfed_rates|rate|162|nyfed:average:-:act_360:simple:2026-08-14@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-14|153|false
+row|ny-fed:nyfed_rates|rate|163|nyfed:average:-:act_360:simple:2026-08-14@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-14|154|false
+row|ny-fed:nyfed_rates|rate|164|nyfed:average:-:act_360:simple:2026-08-14@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-14|155|false
+row|ny-fed:nyfed_rates|rate|165|nyfed:index_level:-:act_360:simple:2026-08-14@SOFR Index|1|SOFR Index|3||2026-08-14|156|false
+row|ny-fed:nyfed_rates|rate|166|nyfed:fixing:-:act_360:simple:2026-08-14@TGCR|1|TGCR|1||2026-08-14|157|false
+row|ny-fed:nyfed_rates|rate|167|nyfed:fixing:-:act_360:simple:2026-08-17@BGCR|1|BGCR|1||2026-08-17|158|false
+row|ny-fed:nyfed_rates|rate|168|nyfed:fixing:-:act_360:simple:2026-08-17@EFFR|1|EFFR|1||2026-08-17|159|false
+row|ny-fed:nyfed_rates|rate|169|nyfed:fixing:-:act_360:simple:2026-08-17@OBFR|1|OBFR|1||2026-08-17|160|false
+row|ny-fed:nyfed_rates|rate|16|nyfed:average:-:act_360:simple:2026-10-14@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-14|7|false
+row|ny-fed:nyfed_rates|rate|170|nyfed:fixing:-:act_360:simple:2026-08-17@SOFR|1|SOFR|1||2026-08-17|161|false
+row|ny-fed:nyfed_rates|rate|171|nyfed:average:-:act_360:simple:2026-08-17@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-17|162|false
+row|ny-fed:nyfed_rates|rate|172|nyfed:average:-:act_360:simple:2026-08-17@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-17|163|false
+row|ny-fed:nyfed_rates|rate|173|nyfed:average:-:act_360:simple:2026-08-17@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-17|164|false
+row|ny-fed:nyfed_rates|rate|174|nyfed:index_level:-:act_360:simple:2026-08-17@SOFR Index|1|SOFR Index|3||2026-08-17|165|false
+row|ny-fed:nyfed_rates|rate|175|nyfed:fixing:-:act_360:simple:2026-08-17@TGCR|1|TGCR|1||2026-08-17|166|false
+row|ny-fed:nyfed_rates|rate|176|nyfed:fixing:-:act_360:simple:2026-08-18@BGCR|1|BGCR|1||2026-08-18|167|false
+row|ny-fed:nyfed_rates|rate|177|nyfed:fixing:-:act_360:simple:2026-08-18@EFFR|1|EFFR|1||2026-08-18|168|false
+row|ny-fed:nyfed_rates|rate|178|nyfed:fixing:-:act_360:simple:2026-08-18@OBFR|1|OBFR|1||2026-08-18|169|false
+row|ny-fed:nyfed_rates|rate|179|nyfed:fixing:-:act_360:simple:2026-08-18@SOFR|1|SOFR|1||2026-08-18|170|false
+row|ny-fed:nyfed_rates|rate|17|nyfed:index_level:-:act_360:simple:2026-10-14@SOFR Index|1|SOFR Index|3||2026-10-14|8|false
+row|ny-fed:nyfed_rates|rate|180|nyfed:average:-:act_360:simple:2026-08-18@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-18|171|false
+row|ny-fed:nyfed_rates|rate|181|nyfed:average:-:act_360:simple:2026-08-18@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-18|172|false
+row|ny-fed:nyfed_rates|rate|182|nyfed:average:-:act_360:simple:2026-08-18@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-18|173|false
+row|ny-fed:nyfed_rates|rate|183|nyfed:index_level:-:act_360:simple:2026-08-18@SOFR Index|1|SOFR Index|3||2026-08-18|174|false
+row|ny-fed:nyfed_rates|rate|184|nyfed:fixing:-:act_360:simple:2026-08-18@TGCR|1|TGCR|1||2026-08-18|175|false
+row|ny-fed:nyfed_rates|rate|185|nyfed:fixing:-:act_360:simple:2026-08-19@BGCR|1|BGCR|1||2026-08-19|176|false
+row|ny-fed:nyfed_rates|rate|186|nyfed:fixing:-:act_360:simple:2026-08-19@EFFR|1|EFFR|1||2026-08-19|177|false
+row|ny-fed:nyfed_rates|rate|187|nyfed:fixing:-:act_360:simple:2026-08-19@OBFR|1|OBFR|1||2026-08-19|178|false
+row|ny-fed:nyfed_rates|rate|188|nyfed:fixing:-:act_360:simple:2026-08-19@SOFR|1|SOFR|1||2026-08-19|179|false
+row|ny-fed:nyfed_rates|rate|189|nyfed:average:-:act_360:simple:2026-08-19@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-19|180|false
+row|ny-fed:nyfed_rates|rate|18|nyfed:fixing:-:act_360:simple:2026-10-14@TGCR|1|TGCR|1||2026-10-14|9|false
+row|ny-fed:nyfed_rates|rate|190|nyfed:average:-:act_360:simple:2026-08-19@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-19|181|false
+row|ny-fed:nyfed_rates|rate|191|nyfed:average:-:act_360:simple:2026-08-19@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-19|182|false
+row|ny-fed:nyfed_rates|rate|192|nyfed:index_level:-:act_360:simple:2026-08-19@SOFR Index|1|SOFR Index|3||2026-08-19|183|false
+row|ny-fed:nyfed_rates|rate|193|nyfed:fixing:-:act_360:simple:2026-08-19@TGCR|1|TGCR|1||2026-08-19|184|false
+row|ny-fed:nyfed_rates|rate|194|nyfed:fixing:-:act_360:simple:2026-08-20@BGCR|1|BGCR|1||2026-08-20|185|false
+row|ny-fed:nyfed_rates|rate|195|nyfed:fixing:-:act_360:simple:2026-08-20@EFFR|1|EFFR|1||2026-08-20|186|false
+row|ny-fed:nyfed_rates|rate|196|nyfed:fixing:-:act_360:simple:2026-08-20@OBFR|1|OBFR|1||2026-08-20|187|false
+row|ny-fed:nyfed_rates|rate|197|nyfed:fixing:-:act_360:simple:2026-08-20@SOFR|1|SOFR|1||2026-08-20|188|false
+row|ny-fed:nyfed_rates|rate|198|nyfed:average:-:act_360:simple:2026-08-20@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-20|189|false
+row|ny-fed:nyfed_rates|rate|199|nyfed:average:-:act_360:simple:2026-08-20@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-20|190|false
+row|ny-fed:nyfed_rates|rate|19|nyfed:fixing:-:act_360:simple:2026-10-15@BGCR|1|BGCR|1||2026-10-15|10|false
+row|ny-fed:nyfed_rates|rate|1|nyfed:fixing:-:act_360:simple:2026-10-13@BGCR|1|BGCR|1||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|200|nyfed:average:-:act_360:simple:2026-08-20@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-20|191|false
+row|ny-fed:nyfed_rates|rate|201|nyfed:index_level:-:act_360:simple:2026-08-20@SOFR Index|1|SOFR Index|3||2026-08-20|192|false
+row|ny-fed:nyfed_rates|rate|202|nyfed:fixing:-:act_360:simple:2026-08-20@TGCR|1|TGCR|1||2026-08-20|193|false
+row|ny-fed:nyfed_rates|rate|203|nyfed:fixing:-:act_360:simple:2026-08-21@BGCR|1|BGCR|1||2026-08-21|194|false
+row|ny-fed:nyfed_rates|rate|204|nyfed:fixing:-:act_360:simple:2026-08-21@EFFR|1|EFFR|1||2026-08-21|195|false
+row|ny-fed:nyfed_rates|rate|205|nyfed:fixing:-:act_360:simple:2026-08-21@OBFR|1|OBFR|1||2026-08-21|196|false
+row|ny-fed:nyfed_rates|rate|206|nyfed:fixing:-:act_360:simple:2026-08-21@SOFR|1|SOFR|1||2026-08-21|197|false
+row|ny-fed:nyfed_rates|rate|207|nyfed:average:-:act_360:simple:2026-08-21@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-21|198|false
+row|ny-fed:nyfed_rates|rate|208|nyfed:average:-:act_360:simple:2026-08-21@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-21|199|false
+row|ny-fed:nyfed_rates|rate|209|nyfed:average:-:act_360:simple:2026-08-21@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-21|200|false
+row|ny-fed:nyfed_rates|rate|20|nyfed:fixing:-:act_360:simple:2026-10-15@EFFR|1|EFFR|1||2026-10-15|11|false
+row|ny-fed:nyfed_rates|rate|210|nyfed:index_level:-:act_360:simple:2026-08-21@SOFR Index|1|SOFR Index|3||2026-08-21|201|false
+row|ny-fed:nyfed_rates|rate|211|nyfed:fixing:-:act_360:simple:2026-08-21@TGCR|1|TGCR|1||2026-08-21|202|false
+row|ny-fed:nyfed_rates|rate|212|nyfed:fixing:-:act_360:simple:2026-08-24@BGCR|1|BGCR|1||2026-08-24|203|false
+row|ny-fed:nyfed_rates|rate|213|nyfed:fixing:-:act_360:simple:2026-08-24@EFFR|1|EFFR|1||2026-08-24|204|false
+row|ny-fed:nyfed_rates|rate|214|nyfed:fixing:-:act_360:simple:2026-08-24@OBFR|1|OBFR|1||2026-08-24|205|false
+row|ny-fed:nyfed_rates|rate|215|nyfed:fixing:-:act_360:simple:2026-08-24@SOFR|1|SOFR|1||2026-08-24|206|false
+row|ny-fed:nyfed_rates|rate|216|nyfed:average:-:act_360:simple:2026-08-24@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-24|207|false
+row|ny-fed:nyfed_rates|rate|217|nyfed:average:-:act_360:simple:2026-08-24@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-24|208|false
+row|ny-fed:nyfed_rates|rate|218|nyfed:average:-:act_360:simple:2026-08-24@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-24|209|false
+row|ny-fed:nyfed_rates|rate|219|nyfed:index_level:-:act_360:simple:2026-08-24@SOFR Index|1|SOFR Index|3||2026-08-24|210|false
+row|ny-fed:nyfed_rates|rate|21|nyfed:fixing:-:act_360:simple:2026-10-15@OBFR|1|OBFR|1||2026-10-15|12|false
+row|ny-fed:nyfed_rates|rate|220|nyfed:fixing:-:act_360:simple:2026-08-24@TGCR|1|TGCR|1||2026-08-24|211|false
+row|ny-fed:nyfed_rates|rate|221|nyfed:fixing:-:act_360:simple:2026-08-25@BGCR|1|BGCR|1||2026-08-25|212|false
+row|ny-fed:nyfed_rates|rate|222|nyfed:fixing:-:act_360:simple:2026-08-25@EFFR|1|EFFR|1||2026-08-25|213|false
+row|ny-fed:nyfed_rates|rate|223|nyfed:fixing:-:act_360:simple:2026-08-25@OBFR|1|OBFR|1||2026-08-25|214|false
+row|ny-fed:nyfed_rates|rate|224|nyfed:fixing:-:act_360:simple:2026-08-25@SOFR|1|SOFR|1||2026-08-25|215|false
+row|ny-fed:nyfed_rates|rate|225|nyfed:average:-:act_360:simple:2026-08-25@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-25|216|false
+row|ny-fed:nyfed_rates|rate|226|nyfed:average:-:act_360:simple:2026-08-25@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-25|217|false
+row|ny-fed:nyfed_rates|rate|227|nyfed:average:-:act_360:simple:2026-08-25@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-25|218|false
+row|ny-fed:nyfed_rates|rate|228|nyfed:index_level:-:act_360:simple:2026-08-25@SOFR Index|1|SOFR Index|3||2026-08-25|219|false
+row|ny-fed:nyfed_rates|rate|229|nyfed:fixing:-:act_360:simple:2026-08-25@TGCR|1|TGCR|1||2026-08-25|220|false
+row|ny-fed:nyfed_rates|rate|22|nyfed:fixing:-:act_360:simple:2026-10-15@SOFR|1|SOFR|1||2026-10-15|13|false
+row|ny-fed:nyfed_rates|rate|230|nyfed:fixing:-:act_360:simple:2026-08-26@BGCR|1|BGCR|1||2026-08-26|221|false
+row|ny-fed:nyfed_rates|rate|231|nyfed:fixing:-:act_360:simple:2026-08-26@EFFR|1|EFFR|1||2026-08-26|222|false
+row|ny-fed:nyfed_rates|rate|232|nyfed:fixing:-:act_360:simple:2026-08-26@OBFR|1|OBFR|1||2026-08-26|223|false
+row|ny-fed:nyfed_rates|rate|233|nyfed:fixing:-:act_360:simple:2026-08-26@SOFR|1|SOFR|1||2026-08-26|224|false
+row|ny-fed:nyfed_rates|rate|234|nyfed:average:-:act_360:simple:2026-08-26@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-26|225|false
+row|ny-fed:nyfed_rates|rate|235|nyfed:average:-:act_360:simple:2026-08-26@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-26|226|false
+row|ny-fed:nyfed_rates|rate|236|nyfed:average:-:act_360:simple:2026-08-26@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-26|227|false
+row|ny-fed:nyfed_rates|rate|237|nyfed:index_level:-:act_360:simple:2026-08-26@SOFR Index|1|SOFR Index|3||2026-08-26|228|false
+row|ny-fed:nyfed_rates|rate|238|nyfed:fixing:-:act_360:simple:2026-08-26@TGCR|1|TGCR|1||2026-08-26|229|false
+row|ny-fed:nyfed_rates|rate|239|nyfed:fixing:-:act_360:simple:2026-08-27@BGCR|1|BGCR|1||2026-08-27|230|false
+row|ny-fed:nyfed_rates|rate|23|nyfed:average:-:act_360:simple:2026-10-15@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-15|14|false
+row|ny-fed:nyfed_rates|rate|240|nyfed:fixing:-:act_360:simple:2026-08-27@EFFR|1|EFFR|1||2026-08-27|231|false
+row|ny-fed:nyfed_rates|rate|241|nyfed:fixing:-:act_360:simple:2026-08-27@OBFR|1|OBFR|1||2026-08-27|232|false
+row|ny-fed:nyfed_rates|rate|242|nyfed:fixing:-:act_360:simple:2026-08-27@SOFR|1|SOFR|1||2026-08-27|233|false
+row|ny-fed:nyfed_rates|rate|243|nyfed:average:-:act_360:simple:2026-08-27@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-27|234|false
+row|ny-fed:nyfed_rates|rate|244|nyfed:average:-:act_360:simple:2026-08-27@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-27|235|false
+row|ny-fed:nyfed_rates|rate|245|nyfed:average:-:act_360:simple:2026-08-27@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-27|236|false
+row|ny-fed:nyfed_rates|rate|246|nyfed:index_level:-:act_360:simple:2026-08-27@SOFR Index|1|SOFR Index|3||2026-08-27|237|false
+row|ny-fed:nyfed_rates|rate|247|nyfed:fixing:-:act_360:simple:2026-08-27@TGCR|1|TGCR|1||2026-08-27|238|false
+row|ny-fed:nyfed_rates|rate|248|nyfed:fixing:-:act_360:simple:2026-08-28@BGCR|1|BGCR|1||2026-08-28|239|false
+row|ny-fed:nyfed_rates|rate|249|nyfed:fixing:-:act_360:simple:2026-08-28@EFFR|1|EFFR|1||2026-08-28|240|false
+row|ny-fed:nyfed_rates|rate|24|nyfed:average:-:act_360:simple:2026-10-15@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-15|15|false
+row|ny-fed:nyfed_rates|rate|250|nyfed:fixing:-:act_360:simple:2026-08-28@OBFR|1|OBFR|1||2026-08-28|241|false
+row|ny-fed:nyfed_rates|rate|251|nyfed:fixing:-:act_360:simple:2026-08-28@SOFR|1|SOFR|1||2026-08-28|242|false
+row|ny-fed:nyfed_rates|rate|252|nyfed:average:-:act_360:simple:2026-08-28@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-28|243|false
+row|ny-fed:nyfed_rates|rate|253|nyfed:average:-:act_360:simple:2026-08-28@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-28|244|false
+row|ny-fed:nyfed_rates|rate|254|nyfed:average:-:act_360:simple:2026-08-28@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-28|245|false
+row|ny-fed:nyfed_rates|rate|255|nyfed:index_level:-:act_360:simple:2026-08-28@SOFR Index|1|SOFR Index|3||2026-08-28|246|false
+row|ny-fed:nyfed_rates|rate|256|nyfed:fixing:-:act_360:simple:2026-08-28@TGCR|1|TGCR|1||2026-08-28|247|false
+row|ny-fed:nyfed_rates|rate|257|nyfed:fixing:-:act_360:simple:2026-08-31@BGCR|1|BGCR|1||2026-08-31|248|false
+row|ny-fed:nyfed_rates|rate|258|nyfed:fixing:-:act_360:simple:2026-08-31@EFFR|1|EFFR|1||2026-08-31|249|false
+row|ny-fed:nyfed_rates|rate|259|nyfed:fixing:-:act_360:simple:2026-08-31@OBFR|1|OBFR|1||2026-08-31|250|false
+row|ny-fed:nyfed_rates|rate|25|nyfed:average:-:act_360:simple:2026-10-15@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-15|16|false
+row|ny-fed:nyfed_rates|rate|260|nyfed:fixing:-:act_360:simple:2026-08-31@SOFR|1|SOFR|1||2026-08-31|251|false
+row|ny-fed:nyfed_rates|rate|261|nyfed:average:-:act_360:simple:2026-08-31@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-31|252|false
+row|ny-fed:nyfed_rates|rate|262|nyfed:average:-:act_360:simple:2026-08-31@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-31|253|false
+row|ny-fed:nyfed_rates|rate|263|nyfed:average:-:act_360:simple:2026-08-31@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-31|254|false
+row|ny-fed:nyfed_rates|rate|264|nyfed:index_level:-:act_360:simple:2026-08-31@SOFR Index|1|SOFR Index|3||2026-08-31|255|false
+row|ny-fed:nyfed_rates|rate|265|nyfed:fixing:-:act_360:simple:2026-08-31@TGCR|1|TGCR|1||2026-08-31|256|false
+row|ny-fed:nyfed_rates|rate|266|nyfed:fixing:-:act_360:simple:2026-09-01@BGCR|1|BGCR|1||2026-09-01|257|false
+row|ny-fed:nyfed_rates|rate|267|nyfed:fixing:-:act_360:simple:2026-09-01@EFFR|1|EFFR|1||2026-09-01|258|false
+row|ny-fed:nyfed_rates|rate|268|nyfed:fixing:-:act_360:simple:2026-09-01@OBFR|1|OBFR|1||2026-09-01|259|false
+row|ny-fed:nyfed_rates|rate|269|nyfed:fixing:-:act_360:simple:2026-09-01@SOFR|1|SOFR|1||2026-09-01|260|false
+row|ny-fed:nyfed_rates|rate|26|nyfed:index_level:-:act_360:simple:2026-10-15@SOFR Index|1|SOFR Index|3||2026-10-15|17|false
+row|ny-fed:nyfed_rates|rate|270|nyfed:average:-:act_360:simple:2026-09-01@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-01|261|false
+row|ny-fed:nyfed_rates|rate|271|nyfed:average:-:act_360:simple:2026-09-01@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-01|262|false
+row|ny-fed:nyfed_rates|rate|272|nyfed:average:-:act_360:simple:2026-09-01@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-01|263|false
+row|ny-fed:nyfed_rates|rate|273|nyfed:index_level:-:act_360:simple:2026-09-01@SOFR Index|1|SOFR Index|3||2026-09-01|264|false
+row|ny-fed:nyfed_rates|rate|274|nyfed:fixing:-:act_360:simple:2026-09-01@TGCR|1|TGCR|1||2026-09-01|265|false
+row|ny-fed:nyfed_rates|rate|275|nyfed:fixing:-:act_360:simple:2026-09-02@BGCR|1|BGCR|1||2026-09-02|266|false
+row|ny-fed:nyfed_rates|rate|276|nyfed:fixing:-:act_360:simple:2026-09-02@EFFR|1|EFFR|1||2026-09-02|267|false
+row|ny-fed:nyfed_rates|rate|277|nyfed:fixing:-:act_360:simple:2026-09-02@OBFR|1|OBFR|1||2026-09-02|268|false
+row|ny-fed:nyfed_rates|rate|278|nyfed:fixing:-:act_360:simple:2026-09-02@SOFR|1|SOFR|1||2026-09-02|269|false
+row|ny-fed:nyfed_rates|rate|279|nyfed:average:-:act_360:simple:2026-09-02@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-02|270|false
+row|ny-fed:nyfed_rates|rate|27|nyfed:fixing:-:act_360:simple:2026-10-15@TGCR|1|TGCR|1||2026-10-15|18|false
+row|ny-fed:nyfed_rates|rate|280|nyfed:average:-:act_360:simple:2026-09-02@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-02|271|false
+row|ny-fed:nyfed_rates|rate|281|nyfed:average:-:act_360:simple:2026-09-02@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-02|272|false
+row|ny-fed:nyfed_rates|rate|282|nyfed:index_level:-:act_360:simple:2026-09-02@SOFR Index|1|SOFR Index|3||2026-09-02|273|false
+row|ny-fed:nyfed_rates|rate|283|nyfed:fixing:-:act_360:simple:2026-09-02@TGCR|1|TGCR|1||2026-09-02|274|false
+row|ny-fed:nyfed_rates|rate|284|nyfed:fixing:-:act_360:simple:2026-09-03@BGCR|1|BGCR|1||2026-09-03|275|false
+row|ny-fed:nyfed_rates|rate|285|nyfed:fixing:-:act_360:simple:2026-09-03@EFFR|1|EFFR|1||2026-09-03|276|false
+row|ny-fed:nyfed_rates|rate|286|nyfed:fixing:-:act_360:simple:2026-09-03@OBFR|1|OBFR|1||2026-09-03|277|false
+row|ny-fed:nyfed_rates|rate|287|nyfed:fixing:-:act_360:simple:2026-09-03@SOFR|1|SOFR|1||2026-09-03|278|false
+row|ny-fed:nyfed_rates|rate|288|nyfed:average:-:act_360:simple:2026-09-03@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-03|279|false
+row|ny-fed:nyfed_rates|rate|289|nyfed:average:-:act_360:simple:2026-09-03@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-03|280|false
+row|ny-fed:nyfed_rates|rate|28|nyfed:fixing:-:act_360:simple:2026-10-16@BGCR|1|BGCR|1||2026-10-16|19|false
+row|ny-fed:nyfed_rates|rate|290|nyfed:average:-:act_360:simple:2026-09-03@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-03|281|false
+row|ny-fed:nyfed_rates|rate|291|nyfed:index_level:-:act_360:simple:2026-09-03@SOFR Index|1|SOFR Index|3||2026-09-03|282|false
+row|ny-fed:nyfed_rates|rate|292|nyfed:fixing:-:act_360:simple:2026-09-03@TGCR|1|TGCR|1||2026-09-03|283|false
+row|ny-fed:nyfed_rates|rate|293|nyfed:fixing:-:act_360:simple:2026-09-04@BGCR|1|BGCR|1||2026-09-04|284|false
+row|ny-fed:nyfed_rates|rate|294|nyfed:fixing:-:act_360:simple:2026-09-04@EFFR|1|EFFR|1||2026-09-04|285|false
+row|ny-fed:nyfed_rates|rate|295|nyfed:fixing:-:act_360:simple:2026-09-04@OBFR|1|OBFR|1||2026-09-04|286|false
+row|ny-fed:nyfed_rates|rate|296|nyfed:fixing:-:act_360:simple:2026-09-04@SOFR|1|SOFR|1||2026-09-04|287|false
+row|ny-fed:nyfed_rates|rate|297|nyfed:average:-:act_360:simple:2026-09-04@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-04|288|false
+row|ny-fed:nyfed_rates|rate|298|nyfed:average:-:act_360:simple:2026-09-04@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-04|289|false
+row|ny-fed:nyfed_rates|rate|299|nyfed:average:-:act_360:simple:2026-09-04@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-04|290|false
+row|ny-fed:nyfed_rates|rate|29|nyfed:fixing:-:act_360:simple:2026-10-16@EFFR|1|EFFR|1||2026-10-16|20|false
+row|ny-fed:nyfed_rates|rate|2|nyfed:fixing:-:act_360:simple:2026-10-13@EFFR|1|EFFR|1||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|300|nyfed:index_level:-:act_360:simple:2026-09-04@SOFR Index|1|SOFR Index|3||2026-09-04|291|false
+row|ny-fed:nyfed_rates|rate|301|nyfed:fixing:-:act_360:simple:2026-09-04@TGCR|1|TGCR|1||2026-09-04|292|false
+row|ny-fed:nyfed_rates|rate|302|nyfed:fixing:-:act_360:simple:2026-09-08@BGCR|1|BGCR|1||2026-09-08|293|false
+row|ny-fed:nyfed_rates|rate|303|nyfed:fixing:-:act_360:simple:2026-09-08@EFFR|1|EFFR|1||2026-09-08|294|false
+row|ny-fed:nyfed_rates|rate|304|nyfed:fixing:-:act_360:simple:2026-09-08@OBFR|1|OBFR|1||2026-09-08|295|false
+row|ny-fed:nyfed_rates|rate|305|nyfed:fixing:-:act_360:simple:2026-09-08@SOFR|1|SOFR|1||2026-09-08|296|false
+row|ny-fed:nyfed_rates|rate|306|nyfed:average:-:act_360:simple:2026-09-08@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-08|297|false
+row|ny-fed:nyfed_rates|rate|307|nyfed:average:-:act_360:simple:2026-09-08@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-08|298|false
+row|ny-fed:nyfed_rates|rate|308|nyfed:average:-:act_360:simple:2026-09-08@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-08|299|false
+row|ny-fed:nyfed_rates|rate|309|nyfed:index_level:-:act_360:simple:2026-09-08@SOFR Index|1|SOFR Index|3||2026-09-08|300|false
+row|ny-fed:nyfed_rates|rate|30|nyfed:fixing:-:act_360:simple:2026-10-16@OBFR|1|OBFR|1||2026-10-16|21|false
+row|ny-fed:nyfed_rates|rate|310|nyfed:fixing:-:act_360:simple:2026-09-08@TGCR|1|TGCR|1||2026-09-08|301|false
+row|ny-fed:nyfed_rates|rate|311|nyfed:fixing:-:act_360:simple:2026-09-09@BGCR|1|BGCR|1||2026-09-09|302|false
+row|ny-fed:nyfed_rates|rate|312|nyfed:fixing:-:act_360:simple:2026-09-09@EFFR|1|EFFR|1||2026-09-09|303|false
+row|ny-fed:nyfed_rates|rate|313|nyfed:fixing:-:act_360:simple:2026-09-09@OBFR|1|OBFR|1||2026-09-09|304|false
+row|ny-fed:nyfed_rates|rate|314|nyfed:fixing:-:act_360:simple:2026-09-09@SOFR|1|SOFR|1||2026-09-09|305|false
+row|ny-fed:nyfed_rates|rate|315|nyfed:average:-:act_360:simple:2026-09-09@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-09|306|false
+row|ny-fed:nyfed_rates|rate|316|nyfed:average:-:act_360:simple:2026-09-09@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-09|307|false
+row|ny-fed:nyfed_rates|rate|317|nyfed:average:-:act_360:simple:2026-09-09@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-09|308|false
+row|ny-fed:nyfed_rates|rate|318|nyfed:index_level:-:act_360:simple:2026-09-09@SOFR Index|1|SOFR Index|3||2026-09-09|309|false
+row|ny-fed:nyfed_rates|rate|319|nyfed:fixing:-:act_360:simple:2026-09-09@TGCR|1|TGCR|1||2026-09-09|310|false
+row|ny-fed:nyfed_rates|rate|31|nyfed:fixing:-:act_360:simple:2026-10-16@SOFR|1|SOFR|1||2026-10-16|22|false
+row|ny-fed:nyfed_rates|rate|320|nyfed:fixing:-:act_360:simple:2026-09-10@BGCR|1|BGCR|1||2026-09-10|311|false
+row|ny-fed:nyfed_rates|rate|321|nyfed:fixing:-:act_360:simple:2026-09-10@EFFR|1|EFFR|1||2026-09-10|312|false
+row|ny-fed:nyfed_rates|rate|322|nyfed:fixing:-:act_360:simple:2026-09-10@OBFR|1|OBFR|1||2026-09-10|313|false
+row|ny-fed:nyfed_rates|rate|323|nyfed:fixing:-:act_360:simple:2026-09-10@SOFR|1|SOFR|1||2026-09-10|314|false
+row|ny-fed:nyfed_rates|rate|324|nyfed:average:-:act_360:simple:2026-09-10@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-10|315|false
+row|ny-fed:nyfed_rates|rate|325|nyfed:average:-:act_360:simple:2026-09-10@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-10|316|false
+row|ny-fed:nyfed_rates|rate|326|nyfed:average:-:act_360:simple:2026-09-10@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-10|317|false
+row|ny-fed:nyfed_rates|rate|327|nyfed:index_level:-:act_360:simple:2026-09-10@SOFR Index|1|SOFR Index|3||2026-09-10|318|false
+row|ny-fed:nyfed_rates|rate|328|nyfed:fixing:-:act_360:simple:2026-09-10@TGCR|1|TGCR|1||2026-09-10|319|false
+row|ny-fed:nyfed_rates|rate|329|nyfed:fixing:-:act_360:simple:2026-09-11@BGCR|1|BGCR|1||2026-09-11|320|false
+row|ny-fed:nyfed_rates|rate|32|nyfed:average:-:act_360:simple:2026-10-16@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-16|23|false
+row|ny-fed:nyfed_rates|rate|330|nyfed:fixing:-:act_360:simple:2026-09-11@EFFR|1|EFFR|1||2026-09-11|321|false
+row|ny-fed:nyfed_rates|rate|331|nyfed:fixing:-:act_360:simple:2026-09-11@OBFR|1|OBFR|1||2026-09-11|322|false
+row|ny-fed:nyfed_rates|rate|332|nyfed:fixing:-:act_360:simple:2026-09-11@SOFR|1|SOFR|1||2026-09-11|323|false
+row|ny-fed:nyfed_rates|rate|333|nyfed:average:-:act_360:simple:2026-09-11@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-11|324|false
+row|ny-fed:nyfed_rates|rate|334|nyfed:average:-:act_360:simple:2026-09-11@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-11|325|false
+row|ny-fed:nyfed_rates|rate|335|nyfed:average:-:act_360:simple:2026-09-11@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-11|326|false
+row|ny-fed:nyfed_rates|rate|336|nyfed:index_level:-:act_360:simple:2026-09-11@SOFR Index|1|SOFR Index|3||2026-09-11|327|false
+row|ny-fed:nyfed_rates|rate|337|nyfed:fixing:-:act_360:simple:2026-09-11@TGCR|1|TGCR|1||2026-09-11|328|false
+row|ny-fed:nyfed_rates|rate|338|nyfed:fixing:-:act_360:simple:2026-09-14@BGCR|1|BGCR|1||2026-09-14|329|false
+row|ny-fed:nyfed_rates|rate|339|nyfed:fixing:-:act_360:simple:2026-09-14@EFFR|1|EFFR|1||2026-09-14|330|false
+row|ny-fed:nyfed_rates|rate|33|nyfed:average:-:act_360:simple:2026-10-16@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-16|24|false
+row|ny-fed:nyfed_rates|rate|340|nyfed:fixing:-:act_360:simple:2026-09-14@OBFR|1|OBFR|1||2026-09-14|331|false
+row|ny-fed:nyfed_rates|rate|341|nyfed:fixing:-:act_360:simple:2026-09-14@SOFR|1|SOFR|1||2026-09-14|332|false
+row|ny-fed:nyfed_rates|rate|342|nyfed:average:-:act_360:simple:2026-09-14@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-14|333|false
+row|ny-fed:nyfed_rates|rate|343|nyfed:average:-:act_360:simple:2026-09-14@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-14|334|false
+row|ny-fed:nyfed_rates|rate|344|nyfed:average:-:act_360:simple:2026-09-14@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-14|335|false
+row|ny-fed:nyfed_rates|rate|345|nyfed:index_level:-:act_360:simple:2026-09-14@SOFR Index|1|SOFR Index|3||2026-09-14|336|false
+row|ny-fed:nyfed_rates|rate|346|nyfed:fixing:-:act_360:simple:2026-09-14@TGCR|1|TGCR|1||2026-09-14|337|false
+row|ny-fed:nyfed_rates|rate|347|nyfed:fixing:-:act_360:simple:2026-09-15@BGCR|1|BGCR|1||2026-09-15|338|false
+row|ny-fed:nyfed_rates|rate|348|nyfed:fixing:-:act_360:simple:2026-09-15@EFFR|1|EFFR|1||2026-09-15|339|false
+row|ny-fed:nyfed_rates|rate|349|nyfed:fixing:-:act_360:simple:2026-09-15@OBFR|1|OBFR|1||2026-09-15|340|false
+row|ny-fed:nyfed_rates|rate|34|nyfed:average:-:act_360:simple:2026-10-16@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-16|25|false
+row|ny-fed:nyfed_rates|rate|350|nyfed:fixing:-:act_360:simple:2026-09-15@SOFR|1|SOFR|1||2026-09-15|341|false
+row|ny-fed:nyfed_rates|rate|351|nyfed:average:-:act_360:simple:2026-09-15@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-15|342|false
+row|ny-fed:nyfed_rates|rate|352|nyfed:average:-:act_360:simple:2026-09-15@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-15|343|false
+row|ny-fed:nyfed_rates|rate|353|nyfed:average:-:act_360:simple:2026-09-15@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-15|344|false
+row|ny-fed:nyfed_rates|rate|354|nyfed:index_level:-:act_360:simple:2026-09-15@SOFR Index|1|SOFR Index|3||2026-09-15|345|false
+row|ny-fed:nyfed_rates|rate|355|nyfed:fixing:-:act_360:simple:2026-09-15@TGCR|1|TGCR|1||2026-09-15|346|false
+row|ny-fed:nyfed_rates|rate|356|nyfed:fixing:-:act_360:simple:2026-09-16@BGCR|1|BGCR|1||2026-09-16|347|false
+row|ny-fed:nyfed_rates|rate|357|nyfed:fixing:-:act_360:simple:2026-09-16@EFFR|1|EFFR|1||2026-09-16|348|false
+row|ny-fed:nyfed_rates|rate|358|nyfed:fixing:-:act_360:simple:2026-09-16@OBFR|1|OBFR|1||2026-09-16|349|false
+row|ny-fed:nyfed_rates|rate|359|nyfed:fixing:-:act_360:simple:2026-09-16@SOFR|1|SOFR|1||2026-09-16|350|false
+row|ny-fed:nyfed_rates|rate|35|nyfed:index_level:-:act_360:simple:2026-10-16@SOFR Index|1|SOFR Index|3||2026-10-16|26|false
+row|ny-fed:nyfed_rates|rate|360|nyfed:average:-:act_360:simple:2026-09-16@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-16|351|false
+row|ny-fed:nyfed_rates|rate|361|nyfed:average:-:act_360:simple:2026-09-16@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-16|352|false
+row|ny-fed:nyfed_rates|rate|362|nyfed:average:-:act_360:simple:2026-09-16@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-16|353|false
+row|ny-fed:nyfed_rates|rate|363|nyfed:index_level:-:act_360:simple:2026-09-16@SOFR Index|1|SOFR Index|3||2026-09-16|354|false
+row|ny-fed:nyfed_rates|rate|364|nyfed:fixing:-:act_360:simple:2026-09-16@TGCR|1|TGCR|1||2026-09-16|355|false
+row|ny-fed:nyfed_rates|rate|365|nyfed:fixing:-:act_360:simple:2026-09-17@BGCR|1|BGCR|1||2026-09-17|356|false
+row|ny-fed:nyfed_rates|rate|366|nyfed:fixing:-:act_360:simple:2026-09-17@EFFR|1|EFFR|1||2026-09-17|357|false
+row|ny-fed:nyfed_rates|rate|367|nyfed:fixing:-:act_360:simple:2026-09-17@OBFR|1|OBFR|1||2026-09-17|358|false
+row|ny-fed:nyfed_rates|rate|368|nyfed:fixing:-:act_360:simple:2026-09-17@SOFR|1|SOFR|1||2026-09-17|359|false
+row|ny-fed:nyfed_rates|rate|369|nyfed:average:-:act_360:simple:2026-09-17@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-17|360|false
+row|ny-fed:nyfed_rates|rate|36|nyfed:fixing:-:act_360:simple:2026-10-16@TGCR|1|TGCR|1||2026-10-16|27|false
+row|ny-fed:nyfed_rates|rate|370|nyfed:average:-:act_360:simple:2026-09-17@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-17|361|false
+row|ny-fed:nyfed_rates|rate|371|nyfed:average:-:act_360:simple:2026-09-17@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-17|362|false
+row|ny-fed:nyfed_rates|rate|372|nyfed:index_level:-:act_360:simple:2026-09-17@SOFR Index|1|SOFR Index|3||2026-09-17|363|false
+row|ny-fed:nyfed_rates|rate|373|nyfed:fixing:-:act_360:simple:2026-09-17@TGCR|1|TGCR|1||2026-09-17|364|false
+row|ny-fed:nyfed_rates|rate|374|nyfed:fixing:-:act_360:simple:2026-09-18@BGCR|1|BGCR|1||2026-09-18|365|false
+row|ny-fed:nyfed_rates|rate|375|nyfed:fixing:-:act_360:simple:2026-09-18@EFFR|1|EFFR|1||2026-09-18|366|false
+row|ny-fed:nyfed_rates|rate|376|nyfed:fixing:-:act_360:simple:2026-09-18@OBFR|1|OBFR|1||2026-09-18|367|false
+row|ny-fed:nyfed_rates|rate|377|nyfed:fixing:-:act_360:simple:2026-09-18@SOFR|1|SOFR|1||2026-09-18|368|false
+row|ny-fed:nyfed_rates|rate|378|nyfed:average:-:act_360:simple:2026-09-18@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-18|369|false
+row|ny-fed:nyfed_rates|rate|379|nyfed:average:-:act_360:simple:2026-09-18@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-18|370|false
+row|ny-fed:nyfed_rates|rate|37|nyfed:fixing:-:act_360:simple:2026-10-19@BGCR|1|BGCR|1||2026-10-19|28|false
+row|ny-fed:nyfed_rates|rate|380|nyfed:average:-:act_360:simple:2026-09-18@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-18|371|false
+row|ny-fed:nyfed_rates|rate|381|nyfed:index_level:-:act_360:simple:2026-09-18@SOFR Index|1|SOFR Index|3||2026-09-18|372|false
+row|ny-fed:nyfed_rates|rate|382|nyfed:fixing:-:act_360:simple:2026-09-18@TGCR|1|TGCR|1||2026-09-18|373|false
+row|ny-fed:nyfed_rates|rate|383|nyfed:fixing:-:act_360:simple:2026-09-21@BGCR|1|BGCR|1||2026-09-21|374|false
+row|ny-fed:nyfed_rates|rate|384|nyfed:fixing:-:act_360:simple:2026-09-21@EFFR|1|EFFR|1||2026-09-21|375|false
+row|ny-fed:nyfed_rates|rate|385|nyfed:fixing:-:act_360:simple:2026-09-21@OBFR|1|OBFR|1||2026-09-21|376|false
+row|ny-fed:nyfed_rates|rate|386|nyfed:fixing:-:act_360:simple:2026-09-21@SOFR|1|SOFR|1||2026-09-21|377|false
+row|ny-fed:nyfed_rates|rate|387|nyfed:average:-:act_360:simple:2026-09-21@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-21|378|false
+row|ny-fed:nyfed_rates|rate|388|nyfed:average:-:act_360:simple:2026-09-21@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-21|379|false
+row|ny-fed:nyfed_rates|rate|389|nyfed:average:-:act_360:simple:2026-09-21@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-21|380|false
+row|ny-fed:nyfed_rates|rate|38|nyfed:fixing:-:act_360:simple:2026-10-19@EFFR|1|EFFR|1||2026-10-19|29|false
+row|ny-fed:nyfed_rates|rate|390|nyfed:index_level:-:act_360:simple:2026-09-21@SOFR Index|1|SOFR Index|3||2026-09-21|381|false
+row|ny-fed:nyfed_rates|rate|391|nyfed:fixing:-:act_360:simple:2026-09-21@TGCR|1|TGCR|1||2026-09-21|382|false
+row|ny-fed:nyfed_rates|rate|392|nyfed:fixing:-:act_360:simple:2026-09-22@BGCR|1|BGCR|1||2026-09-22|383|false
+row|ny-fed:nyfed_rates|rate|393|nyfed:fixing:-:act_360:simple:2026-09-22@EFFR|1|EFFR|1||2026-09-22|384|false
+row|ny-fed:nyfed_rates|rate|394|nyfed:fixing:-:act_360:simple:2026-09-22@OBFR|1|OBFR|1||2026-09-22|385|false
+row|ny-fed:nyfed_rates|rate|395|nyfed:fixing:-:act_360:simple:2026-09-22@SOFR|1|SOFR|1||2026-09-22|386|false
+row|ny-fed:nyfed_rates|rate|396|nyfed:average:-:act_360:simple:2026-09-22@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-22|387|false
+row|ny-fed:nyfed_rates|rate|397|nyfed:average:-:act_360:simple:2026-09-22@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-22|388|false
+row|ny-fed:nyfed_rates|rate|398|nyfed:average:-:act_360:simple:2026-09-22@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-22|389|false
+row|ny-fed:nyfed_rates|rate|399|nyfed:index_level:-:act_360:simple:2026-09-22@SOFR Index|1|SOFR Index|3||2026-09-22|390|false
+row|ny-fed:nyfed_rates|rate|39|nyfed:fixing:-:act_360:simple:2026-10-19@OBFR|1|OBFR|1||2026-10-19|30|false
+row|ny-fed:nyfed_rates|rate|3|nyfed:fixing:-:act_360:simple:2026-10-13@OBFR|1|OBFR|1||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|400|nyfed:fixing:-:act_360:simple:2026-09-22@TGCR|1|TGCR|1||2026-09-22|391|false
+row|ny-fed:nyfed_rates|rate|401|nyfed:fixing:-:act_360:simple:2026-09-23@BGCR|1|BGCR|1||2026-09-23|392|false
+row|ny-fed:nyfed_rates|rate|402|nyfed:fixing:-:act_360:simple:2026-09-23@EFFR|1|EFFR|1||2026-09-23|393|false
+row|ny-fed:nyfed_rates|rate|403|nyfed:fixing:-:act_360:simple:2026-09-23@OBFR|1|OBFR|1||2026-09-23|394|false
+row|ny-fed:nyfed_rates|rate|404|nyfed:fixing:-:act_360:simple:2026-09-23@SOFR|1|SOFR|1||2026-09-23|395|false
+row|ny-fed:nyfed_rates|rate|405|nyfed:average:-:act_360:simple:2026-09-23@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-23|396|false
+row|ny-fed:nyfed_rates|rate|406|nyfed:average:-:act_360:simple:2026-09-23@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-23|397|false
+row|ny-fed:nyfed_rates|rate|407|nyfed:average:-:act_360:simple:2026-09-23@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-23|398|false
+row|ny-fed:nyfed_rates|rate|408|nyfed:index_level:-:act_360:simple:2026-09-23@SOFR Index|1|SOFR Index|3||2026-09-23|399|false
+row|ny-fed:nyfed_rates|rate|409|nyfed:fixing:-:act_360:simple:2026-09-23@TGCR|1|TGCR|1||2026-09-23|400|false
+row|ny-fed:nyfed_rates|rate|40|nyfed:fixing:-:act_360:simple:2026-10-19@SOFR|1|SOFR|1||2026-10-19|31|false
+row|ny-fed:nyfed_rates|rate|410|nyfed:fixing:-:act_360:simple:2026-09-24@BGCR|1|BGCR|1||2026-09-24|401|false
+row|ny-fed:nyfed_rates|rate|411|nyfed:fixing:-:act_360:simple:2026-09-24@EFFR|1|EFFR|1||2026-09-24|402|false
+row|ny-fed:nyfed_rates|rate|412|nyfed:fixing:-:act_360:simple:2026-09-24@OBFR|1|OBFR|1||2026-09-24|403|false
+row|ny-fed:nyfed_rates|rate|413|nyfed:fixing:-:act_360:simple:2026-09-24@SOFR|1|SOFR|1||2026-09-24|404|false
+row|ny-fed:nyfed_rates|rate|414|nyfed:average:-:act_360:simple:2026-09-24@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-24|405|false
+row|ny-fed:nyfed_rates|rate|415|nyfed:average:-:act_360:simple:2026-09-24@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-24|406|false
+row|ny-fed:nyfed_rates|rate|416|nyfed:average:-:act_360:simple:2026-09-24@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-24|407|false
+row|ny-fed:nyfed_rates|rate|417|nyfed:index_level:-:act_360:simple:2026-09-24@SOFR Index|1|SOFR Index|3||2026-09-24|408|false
+row|ny-fed:nyfed_rates|rate|418|nyfed:fixing:-:act_360:simple:2026-09-24@TGCR|1|TGCR|1||2026-09-24|409|false
+row|ny-fed:nyfed_rates|rate|419|nyfed:fixing:-:act_360:simple:2026-09-25@BGCR|1|BGCR|1||2026-09-25|410|false
+row|ny-fed:nyfed_rates|rate|41|nyfed:average:-:act_360:simple:2026-10-19@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-19|32|false
+row|ny-fed:nyfed_rates|rate|420|nyfed:fixing:-:act_360:simple:2026-09-25@EFFR|1|EFFR|1||2026-09-25|411|false
+row|ny-fed:nyfed_rates|rate|421|nyfed:fixing:-:act_360:simple:2026-09-25@OBFR|1|OBFR|1||2026-09-25|412|false
+row|ny-fed:nyfed_rates|rate|422|nyfed:fixing:-:act_360:simple:2026-09-25@SOFR|1|SOFR|1||2026-09-25|413|false
+row|ny-fed:nyfed_rates|rate|423|nyfed:average:-:act_360:simple:2026-09-25@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-25|414|false
+row|ny-fed:nyfed_rates|rate|424|nyfed:average:-:act_360:simple:2026-09-25@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-25|415|false
+row|ny-fed:nyfed_rates|rate|425|nyfed:average:-:act_360:simple:2026-09-25@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-25|416|false
+row|ny-fed:nyfed_rates|rate|426|nyfed:index_level:-:act_360:simple:2026-09-25@SOFR Index|1|SOFR Index|3||2026-09-25|417|false
+row|ny-fed:nyfed_rates|rate|427|nyfed:fixing:-:act_360:simple:2026-09-25@TGCR|1|TGCR|1||2026-09-25|418|false
+row|ny-fed:nyfed_rates|rate|428|nyfed:fixing:-:act_360:simple:2026-09-28@BGCR|1|BGCR|1||2026-09-28|419|false
+row|ny-fed:nyfed_rates|rate|429|nyfed:fixing:-:act_360:simple:2026-09-28@EFFR|1|EFFR|1||2026-09-28|420|false
+row|ny-fed:nyfed_rates|rate|42|nyfed:average:-:act_360:simple:2026-10-19@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-19|33|false
+row|ny-fed:nyfed_rates|rate|430|nyfed:fixing:-:act_360:simple:2026-09-28@OBFR|1|OBFR|1||2026-09-28|421|false
+row|ny-fed:nyfed_rates|rate|431|nyfed:fixing:-:act_360:simple:2026-09-28@SOFR|1|SOFR|1||2026-09-28|422|false
+row|ny-fed:nyfed_rates|rate|432|nyfed:average:-:act_360:simple:2026-09-28@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-28|423|false
+row|ny-fed:nyfed_rates|rate|433|nyfed:average:-:act_360:simple:2026-09-28@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-28|424|false
+row|ny-fed:nyfed_rates|rate|434|nyfed:average:-:act_360:simple:2026-09-28@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-28|425|false
+row|ny-fed:nyfed_rates|rate|435|nyfed:index_level:-:act_360:simple:2026-09-28@SOFR Index|1|SOFR Index|3||2026-09-28|426|false
+row|ny-fed:nyfed_rates|rate|436|nyfed:fixing:-:act_360:simple:2026-09-28@TGCR|1|TGCR|1||2026-09-28|427|false
+row|ny-fed:nyfed_rates|rate|437|nyfed:fixing:-:act_360:simple:2026-09-29@BGCR|1|BGCR|1||2026-09-29|428|false
+row|ny-fed:nyfed_rates|rate|438|nyfed:fixing:-:act_360:simple:2026-09-29@EFFR|1|EFFR|1||2026-09-29|429|false
+row|ny-fed:nyfed_rates|rate|439|nyfed:fixing:-:act_360:simple:2026-09-29@OBFR|1|OBFR|1||2026-09-29|430|false
+row|ny-fed:nyfed_rates|rate|43|nyfed:average:-:act_360:simple:2026-10-19@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-19|34|false
+row|ny-fed:nyfed_rates|rate|440|nyfed:fixing:-:act_360:simple:2026-09-29@SOFR|1|SOFR|1||2026-09-29|431|false
+row|ny-fed:nyfed_rates|rate|441|nyfed:average:-:act_360:simple:2026-09-29@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-29|432|false
+row|ny-fed:nyfed_rates|rate|442|nyfed:average:-:act_360:simple:2026-09-29@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-29|433|false
+row|ny-fed:nyfed_rates|rate|443|nyfed:average:-:act_360:simple:2026-09-29@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-29|434|false
+row|ny-fed:nyfed_rates|rate|444|nyfed:index_level:-:act_360:simple:2026-09-29@SOFR Index|1|SOFR Index|3||2026-09-29|435|false
+row|ny-fed:nyfed_rates|rate|445|nyfed:fixing:-:act_360:simple:2026-09-29@TGCR|1|TGCR|1||2026-09-29|436|false
+row|ny-fed:nyfed_rates|rate|446|nyfed:fixing:-:act_360:simple:2026-09-30@BGCR|1|BGCR|1||2026-09-30|437|false
+row|ny-fed:nyfed_rates|rate|447|nyfed:fixing:-:act_360:simple:2026-09-30@EFFR|1|EFFR|1||2026-09-30|438|false
+row|ny-fed:nyfed_rates|rate|448|nyfed:fixing:-:act_360:simple:2026-09-30@OBFR|1|OBFR|1||2026-09-30|439|false
+row|ny-fed:nyfed_rates|rate|449|nyfed:fixing:-:act_360:simple:2026-09-30@SOFR|1|SOFR|1||2026-09-30|440|false
+row|ny-fed:nyfed_rates|rate|44|nyfed:index_level:-:act_360:simple:2026-10-19@SOFR Index|1|SOFR Index|3||2026-10-19|35|false
+row|ny-fed:nyfed_rates|rate|450|nyfed:average:-:act_360:simple:2026-09-30@SOFR 30-day average|1|SOFR 30-day average|2||2026-09-30|441|false
+row|ny-fed:nyfed_rates|rate|451|nyfed:average:-:act_360:simple:2026-09-30@SOFR 90-day average|1|SOFR 90-day average|2||2026-09-30|442|false
+row|ny-fed:nyfed_rates|rate|452|nyfed:average:-:act_360:simple:2026-09-30@SOFR 180-day average|1|SOFR 180-day average|2||2026-09-30|443|false
+row|ny-fed:nyfed_rates|rate|453|nyfed:index_level:-:act_360:simple:2026-09-30@SOFR Index|1|SOFR Index|3||2026-09-30|444|false
+row|ny-fed:nyfed_rates|rate|454|nyfed:fixing:-:act_360:simple:2026-09-30@TGCR|1|TGCR|1||2026-09-30|445|false
+row|ny-fed:nyfed_rates|rate|455|nyfed:fixing:-:act_360:simple:2026-10-01@BGCR|1|BGCR|1||2026-10-01|446|false
+row|ny-fed:nyfed_rates|rate|456|nyfed:fixing:-:act_360:simple:2026-10-01@EFFR|1|EFFR|1||2026-10-01|447|false
+row|ny-fed:nyfed_rates|rate|457|nyfed:fixing:-:act_360:simple:2026-10-01@OBFR|1|OBFR|1||2026-10-01|448|false
+row|ny-fed:nyfed_rates|rate|458|nyfed:fixing:-:act_360:simple:2026-10-01@SOFR|1|SOFR|1||2026-10-01|449|false
+row|ny-fed:nyfed_rates|rate|459|nyfed:average:-:act_360:simple:2026-10-01@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-01|450|false
+row|ny-fed:nyfed_rates|rate|45|nyfed:fixing:-:act_360:simple:2026-10-19@TGCR|1|TGCR|1||2026-10-19|36|false
+row|ny-fed:nyfed_rates|rate|460|nyfed:average:-:act_360:simple:2026-10-01@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-01|451|false
+row|ny-fed:nyfed_rates|rate|461|nyfed:average:-:act_360:simple:2026-10-01@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-01|452|false
+row|ny-fed:nyfed_rates|rate|462|nyfed:index_level:-:act_360:simple:2026-10-01@SOFR Index|1|SOFR Index|3||2026-10-01|453|false
+row|ny-fed:nyfed_rates|rate|463|nyfed:fixing:-:act_360:simple:2026-10-01@TGCR|1|TGCR|1||2026-10-01|454|false
+row|ny-fed:nyfed_rates|rate|464|nyfed:fixing:-:act_360:simple:2026-10-02@BGCR|1|BGCR|1||2026-10-02|455|false
+row|ny-fed:nyfed_rates|rate|465|nyfed:fixing:-:act_360:simple:2026-10-02@EFFR|1|EFFR|1||2026-10-02|456|false
+row|ny-fed:nyfed_rates|rate|466|nyfed:fixing:-:act_360:simple:2026-10-02@OBFR|1|OBFR|1||2026-10-02|457|false
+row|ny-fed:nyfed_rates|rate|467|nyfed:fixing:-:act_360:simple:2026-10-02@SOFR|1|SOFR|1||2026-10-02|458|false
+row|ny-fed:nyfed_rates|rate|468|nyfed:average:-:act_360:simple:2026-10-02@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-02|459|false
+row|ny-fed:nyfed_rates|rate|469|nyfed:average:-:act_360:simple:2026-10-02@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-02|460|false
+row|ny-fed:nyfed_rates|rate|46|nyfed:fixing:-:act_360:simple:2026-10-20@BGCR|1|BGCR|1||2026-10-20|37|false
+row|ny-fed:nyfed_rates|rate|470|nyfed:average:-:act_360:simple:2026-10-02@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-02|461|false
+row|ny-fed:nyfed_rates|rate|471|nyfed:index_level:-:act_360:simple:2026-10-02@SOFR Index|1|SOFR Index|3||2026-10-02|462|false
+row|ny-fed:nyfed_rates|rate|472|nyfed:fixing:-:act_360:simple:2026-10-02@TGCR|1|TGCR|1||2026-10-02|463|false
+row|ny-fed:nyfed_rates|rate|473|nyfed:fixing:-:act_360:simple:2026-10-05@BGCR|1|BGCR|1||2026-10-05|464|false
+row|ny-fed:nyfed_rates|rate|474|nyfed:fixing:-:act_360:simple:2026-10-05@EFFR|1|EFFR|1||2026-10-05|465|false
+row|ny-fed:nyfed_rates|rate|475|nyfed:fixing:-:act_360:simple:2026-10-05@OBFR|1|OBFR|1||2026-10-05|466|false
+row|ny-fed:nyfed_rates|rate|476|nyfed:fixing:-:act_360:simple:2026-10-05@SOFR|1|SOFR|1||2026-10-05|467|false
+row|ny-fed:nyfed_rates|rate|477|nyfed:average:-:act_360:simple:2026-10-05@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-05|468|false
+row|ny-fed:nyfed_rates|rate|478|nyfed:average:-:act_360:simple:2026-10-05@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-05|469|false
+row|ny-fed:nyfed_rates|rate|479|nyfed:average:-:act_360:simple:2026-10-05@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-05|470|false
+row|ny-fed:nyfed_rates|rate|47|nyfed:fixing:-:act_360:simple:2026-10-20@EFFR|1|EFFR|1||2026-10-20|38|false
+row|ny-fed:nyfed_rates|rate|480|nyfed:index_level:-:act_360:simple:2026-10-05@SOFR Index|1|SOFR Index|3||2026-10-05|471|false
+row|ny-fed:nyfed_rates|rate|481|nyfed:fixing:-:act_360:simple:2026-10-05@TGCR|1|TGCR|1||2026-10-05|472|false
+row|ny-fed:nyfed_rates|rate|482|nyfed:fixing:-:act_360:simple:2026-10-06@BGCR|1|BGCR|1||2026-10-06|473|false
+row|ny-fed:nyfed_rates|rate|483|nyfed:fixing:-:act_360:simple:2026-10-06@EFFR|1|EFFR|1||2026-10-06|474|false
+row|ny-fed:nyfed_rates|rate|484|nyfed:fixing:-:act_360:simple:2026-10-06@OBFR|1|OBFR|1||2026-10-06|475|false
+row|ny-fed:nyfed_rates|rate|485|nyfed:fixing:-:act_360:simple:2026-10-06@SOFR|1|SOFR|1||2026-10-06|476|false
+row|ny-fed:nyfed_rates|rate|486|nyfed:average:-:act_360:simple:2026-10-06@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-06|477|false
+row|ny-fed:nyfed_rates|rate|487|nyfed:average:-:act_360:simple:2026-10-06@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-06|478|false
+row|ny-fed:nyfed_rates|rate|488|nyfed:average:-:act_360:simple:2026-10-06@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-06|479|false
+row|ny-fed:nyfed_rates|rate|489|nyfed:index_level:-:act_360:simple:2026-10-06@SOFR Index|1|SOFR Index|3||2026-10-06|480|false
+row|ny-fed:nyfed_rates|rate|48|nyfed:fixing:-:act_360:simple:2026-10-20@OBFR|1|OBFR|1||2026-10-20|39|false
+row|ny-fed:nyfed_rates|rate|490|nyfed:fixing:-:act_360:simple:2026-10-06@TGCR|1|TGCR|1||2026-10-06|481|false
+row|ny-fed:nyfed_rates|rate|491|nyfed:fixing:-:act_360:simple:2026-10-07@BGCR|1|BGCR|1||2026-10-07|482|false
+row|ny-fed:nyfed_rates|rate|492|nyfed:fixing:-:act_360:simple:2026-10-07@EFFR|1|EFFR|1||2026-10-07|483|false
+row|ny-fed:nyfed_rates|rate|493|nyfed:fixing:-:act_360:simple:2026-10-07@OBFR|1|OBFR|1||2026-10-07|484|false
+row|ny-fed:nyfed_rates|rate|494|nyfed:fixing:-:act_360:simple:2026-10-07@SOFR|1|SOFR|1||2026-10-07|485|false
+row|ny-fed:nyfed_rates|rate|495|nyfed:average:-:act_360:simple:2026-10-07@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-07|486|false
+row|ny-fed:nyfed_rates|rate|496|nyfed:average:-:act_360:simple:2026-10-07@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-07|487|false
+row|ny-fed:nyfed_rates|rate|497|nyfed:average:-:act_360:simple:2026-10-07@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-07|488|false
+row|ny-fed:nyfed_rates|rate|498|nyfed:index_level:-:act_360:simple:2026-10-07@SOFR Index|1|SOFR Index|3||2026-10-07|489|false
+row|ny-fed:nyfed_rates|rate|499|nyfed:fixing:-:act_360:simple:2026-10-07@TGCR|1|TGCR|1||2026-10-07|490|false
+row|ny-fed:nyfed_rates|rate|49|nyfed:fixing:-:act_360:simple:2026-10-20@SOFR|1|SOFR|1||2026-10-20|40|false
+row|ny-fed:nyfed_rates|rate|4|nyfed:fixing:-:act_360:simple:2026-10-13@SOFR|1|SOFR|1||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|500|nyfed:fixing:-:act_360:simple:2026-10-08@BGCR|1|BGCR|1||2026-10-08|491|false
+row|ny-fed:nyfed_rates|rate|501|nyfed:fixing:-:act_360:simple:2026-10-08@EFFR|1|EFFR|1||2026-10-08|492|false
+row|ny-fed:nyfed_rates|rate|502|nyfed:fixing:-:act_360:simple:2026-10-08@OBFR|1|OBFR|1||2026-10-08|493|false
+row|ny-fed:nyfed_rates|rate|503|nyfed:fixing:-:act_360:simple:2026-10-08@SOFR|1|SOFR|1||2026-10-08|494|false
+row|ny-fed:nyfed_rates|rate|504|nyfed:average:-:act_360:simple:2026-10-08@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-08|495|false
+row|ny-fed:nyfed_rates|rate|505|nyfed:average:-:act_360:simple:2026-10-08@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-08|496|false
+row|ny-fed:nyfed_rates|rate|506|nyfed:average:-:act_360:simple:2026-10-08@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-08|497|false
+row|ny-fed:nyfed_rates|rate|507|nyfed:index_level:-:act_360:simple:2026-10-08@SOFR Index|1|SOFR Index|3||2026-10-08|498|false
+row|ny-fed:nyfed_rates|rate|508|nyfed:fixing:-:act_360:simple:2026-10-08@TGCR|1|TGCR|1||2026-10-08|499|false
+row|ny-fed:nyfed_rates|rate|509|nyfed:fixing:-:act_360:simple:2026-10-09@BGCR|1|BGCR|1||2026-10-09|500|false
+row|ny-fed:nyfed_rates|rate|50|nyfed:average:-:act_360:simple:2026-10-20@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-20|41|false
+row|ny-fed:nyfed_rates|rate|510|nyfed:fixing:-:act_360:simple:2026-10-09@EFFR|1|EFFR|1||2026-10-09|501|false
+row|ny-fed:nyfed_rates|rate|511|nyfed:fixing:-:act_360:simple:2026-10-09@OBFR|1|OBFR|1||2026-10-09|502|false
+row|ny-fed:nyfed_rates|rate|512|nyfed:fixing:-:act_360:simple:2026-10-09@SOFR|1|SOFR|1||2026-10-09|503|false
+row|ny-fed:nyfed_rates|rate|513|nyfed:average:-:act_360:simple:2026-10-09@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-09|504|false
+row|ny-fed:nyfed_rates|rate|514|nyfed:average:-:act_360:simple:2026-10-09@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-09|505|false
+row|ny-fed:nyfed_rates|rate|515|nyfed:average:-:act_360:simple:2026-10-09@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-09|506|false
+row|ny-fed:nyfed_rates|rate|516|nyfed:index_level:-:act_360:simple:2026-10-09@SOFR Index|1|SOFR Index|3||2026-10-09|507|false
+row|ny-fed:nyfed_rates|rate|517|nyfed:fixing:-:act_360:simple:2026-10-09@TGCR|1|TGCR|1||2026-10-09|508|false
+row|ny-fed:nyfed_rates|rate|51|nyfed:average:-:act_360:simple:2026-10-20@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-20|42|false
+row|ny-fed:nyfed_rates|rate|52|nyfed:average:-:act_360:simple:2026-10-20@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-20|43|false
+row|ny-fed:nyfed_rates|rate|53|nyfed:index_level:-:act_360:simple:2026-10-20@SOFR Index|1|SOFR Index|3||2026-10-20|44|false
+row|ny-fed:nyfed_rates|rate|54|nyfed:fixing:-:act_360:simple:2026-10-20@TGCR|1|TGCR|1||2026-10-20|45|false
+row|ny-fed:nyfed_rates|rate|55|nyfed:fixing:-:act_360:simple:2026-10-21@BGCR|1|BGCR|1||2026-10-21|46|false
+row|ny-fed:nyfed_rates|rate|56|nyfed:fixing:-:act_360:simple:2026-10-21@EFFR|1|EFFR|1||2026-10-21|47|false
+row|ny-fed:nyfed_rates|rate|57|nyfed:fixing:-:act_360:simple:2026-10-21@OBFR|1|OBFR|1||2026-10-21|48|false
+row|ny-fed:nyfed_rates|rate|58|nyfed:fixing:-:act_360:simple:2026-10-21@SOFR|1|SOFR|1||2026-10-21|49|false
+row|ny-fed:nyfed_rates|rate|59|nyfed:average:-:act_360:simple:2026-10-21@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-21|50|false
+row|ny-fed:nyfed_rates|rate|5|nyfed:average:-:act_360:simple:2026-10-13@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|60|nyfed:average:-:act_360:simple:2026-10-21@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-21|51|false
+row|ny-fed:nyfed_rates|rate|61|nyfed:average:-:act_360:simple:2026-10-21@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-21|52|false
+row|ny-fed:nyfed_rates|rate|62|nyfed:index_level:-:act_360:simple:2026-10-21@SOFR Index|1|SOFR Index|3||2026-10-21|53|false
+row|ny-fed:nyfed_rates|rate|63|nyfed:fixing:-:act_360:simple:2026-10-21@TGCR|1|TGCR|1||2026-10-21|54|false
+row|ny-fed:nyfed_rates|rate|64|nyfed:fixing:-:act_360:simple:2026-10-22@BGCR|1|BGCR|1||2026-10-22|55|false
+row|ny-fed:nyfed_rates|rate|65|nyfed:fixing:-:act_360:simple:2026-10-22@EFFR|1|EFFR|1||2026-10-22|56|false
+row|ny-fed:nyfed_rates|rate|66|nyfed:fixing:-:act_360:simple:2026-10-22@OBFR|1|OBFR|1||2026-10-22|57|false
+row|ny-fed:nyfed_rates|rate|67|nyfed:fixing:-:act_360:simple:2026-10-22@SOFR|1|SOFR|1||2026-10-22|58|false
+row|ny-fed:nyfed_rates|rate|68|nyfed:average:-:act_360:simple:2026-10-22@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-22|59|false
+row|ny-fed:nyfed_rates|rate|69|nyfed:average:-:act_360:simple:2026-10-22@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-22|60|false
+row|ny-fed:nyfed_rates|rate|6|nyfed:average:-:act_360:simple:2026-10-13@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|70|nyfed:average:-:act_360:simple:2026-10-22@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-22|61|false
+row|ny-fed:nyfed_rates|rate|71|nyfed:index_level:-:act_360:simple:2026-10-22@SOFR Index|1|SOFR Index|3||2026-10-22|62|false
+row|ny-fed:nyfed_rates|rate|72|nyfed:fixing:-:act_360:simple:2026-10-22@TGCR|1|TGCR|1||2026-10-22|63|false
+row|ny-fed:nyfed_rates|rate|73|nyfed:average:-:act_360:simple:2026-10-23@SOFR 30-day average|1|SOFR 30-day average|2||2026-10-23|68|false
+row|ny-fed:nyfed_rates|rate|74|nyfed:average:-:act_360:simple:2026-10-23@SOFR 90-day average|1|SOFR 90-day average|2||2026-10-23|69|false
+row|ny-fed:nyfed_rates|rate|75|nyfed:average:-:act_360:simple:2026-10-23@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-23|70|false
+row|ny-fed:nyfed_rates|rate|76|nyfed:index_level:-:act_360:simple:2026-10-23@SOFR Index|1|SOFR Index|3||2026-10-23|71|false
+row|ny-fed:nyfed_rates|rate|77|nyfed:fixing:-:act_360:simple:2026-08-03@BGCR|1|BGCR|1||2026-08-03|64|false
+row|ny-fed:nyfed_rates|rate|78|nyfed:fixing:-:act_360:simple:2026-08-03@EFFR|1|EFFR|1||2026-08-03|65|false
+row|ny-fed:nyfed_rates|rate|79|nyfed:fixing:-:act_360:simple:2026-08-03@OBFR|1|OBFR|1||2026-08-03|66|false
+row|ny-fed:nyfed_rates|rate|7|nyfed:average:-:act_360:simple:2026-10-13@SOFR 180-day average|1|SOFR 180-day average|2||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|80|nyfed:fixing:-:act_360:simple:2026-08-03@SOFR|1|SOFR|1||2026-08-03|67|false
+row|ny-fed:nyfed_rates|rate|81|nyfed:average:-:act_360:simple:2026-08-03@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-03|73|false
+row|ny-fed:nyfed_rates|rate|82|nyfed:average:-:act_360:simple:2026-08-03@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-03|74|false
+row|ny-fed:nyfed_rates|rate|83|nyfed:average:-:act_360:simple:2026-08-03@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-03|75|false
+row|ny-fed:nyfed_rates|rate|84|nyfed:index_level:-:act_360:simple:2026-08-03@SOFR Index|1|SOFR Index|3||2026-08-03|76|false
+row|ny-fed:nyfed_rates|rate|85|nyfed:fixing:-:act_360:simple:2026-08-03@TGCR|1|TGCR|1||2026-08-03|72|false
+row|ny-fed:nyfed_rates|rate|86|nyfed:fixing:-:act_360:simple:2026-08-04@BGCR|1|BGCR|1||2026-08-04|77|false
+row|ny-fed:nyfed_rates|rate|87|nyfed:fixing:-:act_360:simple:2026-08-04@EFFR|1|EFFR|1||2026-08-04|78|false
+row|ny-fed:nyfed_rates|rate|88|nyfed:fixing:-:act_360:simple:2026-08-04@OBFR|1|OBFR|1||2026-08-04|79|false
+row|ny-fed:nyfed_rates|rate|89|nyfed:fixing:-:act_360:simple:2026-08-04@SOFR|1|SOFR|1||2026-08-04|80|false
+row|ny-fed:nyfed_rates|rate|8|nyfed:index_level:-:act_360:simple:2026-10-13@SOFR Index|1|SOFR Index|3||2026-10-13|0|false
+row|ny-fed:nyfed_rates|rate|90|nyfed:average:-:act_360:simple:2026-08-04@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-04|81|false
+row|ny-fed:nyfed_rates|rate|91|nyfed:average:-:act_360:simple:2026-08-04@SOFR 90-day average|1|SOFR 90-day average|2||2026-08-04|82|false
+row|ny-fed:nyfed_rates|rate|92|nyfed:average:-:act_360:simple:2026-08-04@SOFR 180-day average|1|SOFR 180-day average|2||2026-08-04|83|false
+row|ny-fed:nyfed_rates|rate|93|nyfed:index_level:-:act_360:simple:2026-08-04@SOFR Index|1|SOFR Index|3||2026-08-04|84|false
+row|ny-fed:nyfed_rates|rate|94|nyfed:fixing:-:act_360:simple:2026-08-04@TGCR|1|TGCR|1||2026-08-04|85|false
+row|ny-fed:nyfed_rates|rate|95|nyfed:fixing:-:act_360:simple:2026-08-05@BGCR|1|BGCR|1||2026-08-05|86|false
+row|ny-fed:nyfed_rates|rate|96|nyfed:fixing:-:act_360:simple:2026-08-05@EFFR|1|EFFR|1||2026-08-05|87|false
+row|ny-fed:nyfed_rates|rate|97|nyfed:fixing:-:act_360:simple:2026-08-05@OBFR|1|OBFR|1||2026-08-05|88|false
+row|ny-fed:nyfed_rates|rate|98|nyfed:fixing:-:act_360:simple:2026-08-05@SOFR|1|SOFR|1||2026-08-05|89|false
+row|ny-fed:nyfed_rates|rate|99|nyfed:average:-:act_360:simple:2026-08-05@SOFR 30-day average|1|SOFR 30-day average|2||2026-08-05|90|false
+row|ny-fed:nyfed_rates|rate|9|nyfed:fixing:-:act_360:simple:2026-10-13@TGCR|1|TGCR|1||2026-10-13|0|false
+want|ny-fed:nyfed_rates|asked|SOFR|0
+want|ny-fed:nyfed_rates|asked|SOFR|0
+want|ny-fed:nyfed_rates|declined|SOFR|4
+want|ny-fed:nyfed_rates|declined|SOFR|4

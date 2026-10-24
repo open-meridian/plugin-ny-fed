@@ -1,0 +1,11 @@
+{
+  "said": "The Federal Reserve Bank of New York's markets data API's real response, recorded 2026-10-23 by plugin-ny-fed's author: every reference rate (SOFR, EFFR, OBFR, TGCR, BGCR, and SOFRAI, the SOFR averages and index) from 3 August to 23 October 2026, as JSON, the body gzipped. The rates are subject to the Terms of Use posted at newyorkfed.org; the New York Fed is not responsible for their publication here and has no liability for their use. SOFR and BGCR are calculated using data licensed to the New York Fed by DTCC Solutions LLC. Sample data answers each request for a range of days from it, and the tests read it.",
+  "response": {
+    "path": "/api/rates/all/search.json?startDate=2026-08-03&endDate=2026-10-23",
+    "file": "rates-20260803-20261023.json.gz",
+    "status": 200,
+    "date": "Fri, 23 Oct 2026 16:41:59 GMT",
+    "first_day": "2026-08-03",
+    "last_day": "2026-10-23"
+  }
+}

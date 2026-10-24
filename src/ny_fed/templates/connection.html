@@ -1,6 +1,18 @@
+{#- Connection, at admin: the data role's (meridian/roles/data/connection.html),
+    with the NY Fed's nuance at its blocks only -- the head's status, and
+    "Sources" (the spec's §5) as one row of the role's Stream section, so the
+    page fits one screen: the rate types the API states, their latest
+    effective date and the next release expected, its detail one line per
+    rate type (its state, last release, next expected and about when), how
+    the next release is expected, the history's backfill and the answers
+    kept. No rate: rates are the reading roles'. -#}
 {% extends "meridian/roles/data/connection.html" %}
-{#- The vendor's nuance, at the role's blocks only: here, a section naming
-    the vendor after the common ones. -#}
-{% block vendor_sections %}
-<section class="panel"><h2>Reference vendor</h2><p class="muted">A stand-in vendor serving daily candles; replace it with your own.</p></section>
-{% endblock %}
+{% import "meridian/kit.html" as kit %}
+{% block status %}{{ kit.status({"state": data.state, "label": data.said, "detail": detail, "at": data.checked_at, "at_label": "Last checked"}) }}{% endblock %}
+{% block vendor_rows %}{% if section == "Stream" %}
+{% set read = data.sources|selectattr("last_release")|list %}
+{% set nexts = data.sources|selectattr("next_expected")|map(attribute="next_expected")|sort|list %}
+<tr data-sources="{{ data.sources|length }}"><th scope="row">Sources</th><td>{% if read %}{{ data.sources|length }} sources, latest {{ data.latest_day|day }}, next {{ (nexts|first)|day if nexts else "not known" }}{% else %}{{ data.sources|length }} sources, none read yet{% endif %}{% if data.backfill_error %} <span class="badge warn">History: {{ data.backfill_error }}</span>{% endif %}</td><td class="more"><details class="row-detail" name="facts"><summary aria-label="Details of Sources">…</summary><div class="row-detail-pop"><h3>Sources</h3><dl>
+{% for s in data.sources %}<dt>{{ s.source }}</dt><dd data-source="{{ s.source }}">{{ s.state }}; {{ ("effective " ~ (s.last_release|day)) if s.last_release else "not read yet" }}; next {{ ((s.next_expected|day) ~ ", around " ~ s.published_around) if s.next_expected else "not known" }}</dd>
+{% endfor %}<dt>Dataset</dt><dd><code>{{ data.sources[0].dataset if data.sources else "" }}</code></dd><dt>Reads</dt><dd>{{ data.source }}</dd><dt>Calendar</dt><dd>{{ data.calendar }}</dd><dt>Calls</dt><dd>{{ data.calls }}, {{ data.unchanged_reads }} stating nothing new</dd><dt>History</dt><dd>{{ data.backfill }}{% if data.backfill_error %}; {{ data.backfill_error }}{% endif %}</dd><dt>Answers kept</dt><dd>{{ data.responses_kept }}{% if data.kept_for %}, {{ data.kept_for }}{% endif %}</dd></dl></div></details></td></tr>
+{% endif %}{% endblock %}
