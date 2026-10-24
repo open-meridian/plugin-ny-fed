@@ -2,7 +2,7 @@
 
 ## 0.1.0
 
-The first version, on open-meridian 0.32.1 (contract v27, the lake's rates
+The first version, on open-meridian 0.32.2 (contract v27, the lake's rates
 slice).
 
 - **The NY Fed's reference rates as rates**, one dataset (`nyfed_rates`):

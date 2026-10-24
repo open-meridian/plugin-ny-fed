@@ -70,7 +70,10 @@ async def test_the_current_rates_recorded_as_rates(tmp_path: Path) -> None:
     assert index.value.unit == ops.VALUE_UNIT_INDEX
     assert str(as_decimal(index.value.value)) == "1.26398658"
     assert index.value.index_base == "2018-04-02=1.00000000"
-    assert not index.HasField("convention")
+    # The lake keeps no rate without a convention: the index's is the
+    # money market's, SOFR's daily accrual.
+    assert index.convention.day_count == ops.DAY_COUNT_ACT_360
+    assert index.convention.compounding == ops.COMPOUNDING_SIMPLE
     average = by_key(found, "SOFR 90-day average", "2026-10-23", "average")
     assert str(as_decimal(average.value.value)) == "3.75301"
     assert average.convention.day_count == ops.DAY_COUNT_ACT_360

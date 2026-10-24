@@ -52,7 +52,9 @@ def test_connection_says_how_the_nyfed_is_reached(client: PageClient) -> None:
     # The data role's sections, in its order, the NY Fed's Sources a row of
     # Stream, so the page fits one screen.
     assert text.index("<h2>Key</h2>") < text.index("<h2>Limits and use</h2>")
-    assert text.index("<h2>Stream</h2>") < text.index(">Sources</th>") < text.index("<h2>Sessions")
+    assert text.index("<h2>Stream</h2>") < text.index(">Sources</th>")
+    # No session: a polled plugin's Connection draws no Sessions (SDK 0.32.2).
+    assert "<h2>Sessions</h2>" not in text
     assert 'state="warn"' in text and "1 record not held" in text
     assert "No key needed" in text and "Does not stream" in text
     assert text.count("<dd data-source=") == 6 and 'data-sources="6"' in text

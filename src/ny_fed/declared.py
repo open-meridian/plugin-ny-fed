@@ -30,9 +30,12 @@ lake wants it:
 - the licence the NY Fed's terms suggest (§7): kept, derived use not
   restricted and display, with no limit on retention, and not one person's
   terms. The NY Fed's notice and disclaimer, the attribution its terms ask
-  for, travel with the rates (`ATTRIBUTION`): SDK 0.32.1's licence writes no
-  attribution field yet, so it is stated on the Datasets page and in
-  docs/terms.md. A deployment's licence confirms or replaces the default on
+  for (`ATTRIBUTION`), are stated on the Datasets page and in docs/terms.md.
+  SDK 0.32.2 writes the licence's attribution fields (redistribution
+  allowed with attribution, this notice, copyright with citation required,
+  no more restrictive terms), but core a5da59a's upload does not carry them
+  yet, so a version declaring them is refused at registration: they are
+  declared once core carries them. A deployment's licence confirms or replaces the default on
   the Data sources page; the plugin says nothing of whether a deployment
   meets anyone's terms.
 
@@ -88,7 +91,10 @@ NYFED_RATES_DATASET = DatasetDeclaration(
     cadence=CADENCE,
     history=HISTORY,
     licence_default=DatasetLicence(
-        kept=True, derived_use_terms="not_restricted", derived_use=True, display=True
+        kept=True,
+        derived_use_terms="not_restricted",
+        derived_use=True,
+        display=True,
     ),
     day_time_zone=DAY_TIME_ZONE,
     day_end_minute=DAY_END_MINUTE,

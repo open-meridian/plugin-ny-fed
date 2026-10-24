@@ -20,7 +20,7 @@ deployment:
 | TGCR, the Tri-Party General Collateral Rate | a fixing, with its percentiles and volume |
 | BGCR, the Broad General Collateral Rate | a fixing, with its percentiles and volume |
 | The SOFR 30, 90 and 180-day averages | an average, each its own record |
-| The SOFR Index | an index level, based at 1.00000000 on 2 April 2018 |
+| The SOFR Index | an index level, based at 1.00000000 on 2 April 2018, with the convention of the SOFR it compounds |
 
 A rate is recorded as the NY Fed states it: **3.90** is 3.90 per cent, an
 annualised rate on an actual/360 basis, simple. A volume stated in billions

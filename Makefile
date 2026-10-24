@@ -38,17 +38,20 @@ CLI_CONTEXT := $(if $(MERIDIAN_BIN),--build-context cli=$(MERIDIAN_BIN),)
 # commit, when this plugin chooses. `make e2e RUNTIME_IMAGE=...:latest
 # HARNESS_IMAGE=...:latest` tries a newer core; e2e-latest.yaml does that
 # weekly.
-# Core c786b9a (merged as 06e988b), contract v27, as published with chart 0.1.309.
-RUNTIME_IMAGE ?= ghcr.io/open-meridian/meridian-runtime:c786b9a@sha256:4f028bbc67509064526a3d863e2825c9c0592873620b01c7cc4e583f9f72943f
-HARNESS_IMAGE ?= ghcr.io/open-meridian/meridian-harness:c786b9a@sha256:64f8f74202f4af1306387d0268a1f33382b6b27111ce1de5fc09407a5195f534
-# The harness's one plugin: this one, as instance ny-fed, holding data as
-# pyproject.toml declares.
+# Core a5da59a (merged as 6d346b3), contract v27, as published with chart 0.1.310:
+# the harness's stand-in master holds the platform's referential records.
+RUNTIME_IMAGE ?= ghcr.io/open-meridian/meridian-runtime:a5da59a@sha256:05694f1ca4d642def4e2572c78a56c3ce3c43d060f4bac2983e19283e98910de
+HARNESS_IMAGE ?= ghcr.io/open-meridian/meridian-harness:a5da59a@sha256:74a1e5f08308e26571141b24548082280fed8519976c08b32cd8a4b34fc8e08c
+# The harness's two plugins: this one, as instance ny-fed, holding data as
+# pyproject.toml declares; and the reader, a reporting plugin the e2e runs
+# from e2e/reader.py in the same image.
 # The declaration [tool.meridian] names (contract v25): `make e2e` prints it
 # from the image under test, as `meridian plugin upload` reads it, and the
 # harness holds the plugin's registration to it (its README, `declaration`).
+# The stand-in's the same, its directory mounted as it runs.
 DECLARATION_REF := $(shell sed -n 's/^declaration *= *"\(.*\)"/\1/p' pyproject.toml)
 DECLARE := docker run --rm --network none --entrypoint meridian-declaration
-PLUGINS := [{"instance": "ny-fed", "image": "$(IMAGE)", "roles": ["data"], "declaration": "declaration.json"}]
+PLUGINS := [{"instance": "ny-fed", "image": "$(IMAGE)", "roles": ["data"], "declaration": "declaration.json"}, {"instance": "reader", "image": "$(IMAGE)", "roles": ["reporting"], "declaration": "reader.json"}]
 
 # The kit's built files, where `make preview SHOTS=...` serves them beside
 # the pages for the browser: a meridian-ui checkout's dist/.
@@ -65,7 +68,7 @@ help:
 	@echo "  make lint           ruff and mypy, strict"
 	@echo "  make check          what check.yaml runs: meridian plugin check --verified --run-tests, in a container"
 	@echo "  make image          build the plugin's image, as upload would, and check it"
-	@echo "  make e2e            the plugin, on sample data, on the plugin harness of the runtime it pins: each record asked for, as the lake holds it"
+	@echo "  make e2e            the plugin, on sample data, on the plugin harness of the runtime it pins: its rates in the lake, read back"
 	@echo "  make preview        write preview/: each page on sample data, linking the kit;"
 	@echo "                      SHOTS=<dir> also checks each in a browser with the kit, at 375, 582 and 1280 px wide, and keeps a screenshot"
 	@echo "  make fmt            apply the formatter"
@@ -134,14 +137,15 @@ image:
 	@echo "image OK: $(IMAGE) on $(BASE), $$(docker image inspect -f '{{.Size}}' $(IMAGE) | awk '{printf "%.0f MB", $$1/1e6}')"
 
 # The plugin on the plugin harness published with the runtime it pins (the
-# harness's README, in HARNESS_IMAGE): its first check finds the NY Fed's API
-# unreachable (the e2e's hosts file), sample data reads the committed
-# answer's last ten days, to 23 October 2026, each of the nine records is
-# asked for by its symbol at nyfed and reported missing -- the harness's
-# stand-in master holds no seeded referential record yet, so nothing is
-# recorded -- the lake is as e2e/expected.lake says, both tools answer what
-# the pages show, core lists the catalogue as declared, and a new container
-# records nothing and reads its licence. e2e/run.py says each step.
+# harness's README, in HARNESS_IMAGE), beside a reading plugin: its first
+# check finds the NY Fed's API unreachable (the e2e's hosts file), sample
+# data reads the committed answer's last ten days, to 23 October 2026, each
+# of the nine records resolves by its symbol at nyfed to the platform's
+# INS- record, the history is backfilled from 3 August, its rates are in the
+# lake as e2e/expected.lake says and read back by the reader, a weekend and a
+# day before the recording are declined, both tools answer what the pages
+# show, core lists the catalogue as declared, and a new container records
+# nothing twice. e2e/run.py says each step.
 # Its own project and no published port; nothing outlives it.
 e2e: image
 	@rm -rf .e2e && mkdir -p .e2e
@@ -155,6 +159,8 @@ e2e: image
 		|| { echo "e2e FAILED: no plugin harness at /harness in $(HARNESS_IMAGE)" >&2; exit 1; }
 	@$(DECLARE) $(IMAGE) $(DECLARATION_REF) >.e2e/harness/declaration.json 2>>.e2e/components.log \
 		|| { rm -rf .e2e/harness; echo "e2e FAILED: meridian-declaration did not print $(DECLARATION_REF) (declaration.json)" >&2; exit 1; }
+	@$(DECLARE) -v "$(CURDIR)/e2e":/e2e:ro -e PYTHONPATH=/e2e $(IMAGE) reader:DECLARATION >.e2e/harness/reader.json 2>>.e2e/components.log \
+		|| { rm -rf .e2e/harness; echo "e2e FAILED: meridian-declaration did not print reader:DECLARATION (reader.json)" >&2; exit 1; }
 	@printf '%s\n' '$(PLUGINS)' | docker run --rm -i -v "$(CURDIR)/.e2e/harness":/harness:ro python:3.12-alpine \
 		python /harness/harness.py compose >.e2e/harness/plugins.yaml 2>>.e2e/components.log \
 		|| { echo "e2e FAILED: the harness did not write its plugins" >&2; exit 1; }

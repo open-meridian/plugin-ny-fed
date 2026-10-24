@@ -1,6 +1,7 @@
 # The plugin proven against a released runtime, on every push and pull
 # request: `make e2e` runs it, in synthetic mode, on the plugin harness the
-# Makefile pins beside its runtime image, and compares the lake with e2e/expected.lake. No secret: the runtime and harness
+# Makefile pins beside its runtime image, beside a reading plugin, and
+# compares the lake with e2e/expected.lake. No secret: the runtime and harness
 # images pull without a token, the NY Fed's API needs no key, and synthetic
 # mode reads only the NY Fed's answer committed with the plugin.
 #

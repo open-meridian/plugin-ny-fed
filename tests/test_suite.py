@@ -10,7 +10,7 @@ What a rates-only plugin never presents -- every case about a price, a trade,
 a quote or an outcome, `an-exact-price` and `a-want-recorded-against` about
 closes from ruling 537, and the feed delay, about latency until contract v28
 (ruling 518) -- is the SDK's `RATES_NOT_PRESENTED` (ruling 538), with its
-reasons. Not presented besides, each with its reason:
+reasons; from 0.32.2 it leaves liveness to each plugin. Not presented besides, each with its reason:
 
 - the rates slice's curve cases -- a curve for a date, a tenor not
   published, a bill's two conventions and another source's curve point --
@@ -20,10 +20,9 @@ reasons. Not presented besides, each with its reason:
   yet); the plugin takes Monday to Friday and reads none;
 - `asks-for-a-settlement-date`: it records rates as published.
 
-`records-a-datasets-liveness` is presented, though `RATES_NOT_PRESENTED`
-names it: each answer of the API is the dataset's sign of life
-(RecordLiveness), which confirms the rates in force, a poll as the SDK's
-`Wants.liveness` has it. What `an-exact-price` and `a-want-recorded-against`
+`records-a-datasets-liveness` is presented: each answer of the API is the
+dataset's sign of life (RecordLiveness), which confirms the rates in force,
+a poll as the SDK's `Wants.liveness` has it. What `an-exact-price` and `a-want-recorded-against`
 ask of a rates plugin is held by test_feed.py: a rate never passes through a
 float, and a want's rates are recorded against it. The cases every suite
 holds that the SDK answers (a replacement, the template catalogue, an event
@@ -50,10 +49,8 @@ CURVES = {
     "a-curve-point-from-another-source": "the NY Fed publishes each reference rate itself; "
     "none is another source's curve point",
 }
-#: Presented: each answer of the API is the dataset's sign of life.
-PRESENTED = {"records-a-datasets-liveness"}
 NOT_PRESENTED = {
-    **{case: why for case, why in RATES_NOT_PRESENTED.items() if case not in PRESENTED},
+    **RATES_NOT_PRESENTED,
     **CURVES,
     "reads-a-calendar": "the dataset declares no calendar until the US government securities "
     "calendar is curated (FDP Q15); the plugin takes Monday to Friday and reads none",

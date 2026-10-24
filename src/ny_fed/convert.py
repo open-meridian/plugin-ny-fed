@@ -18,7 +18,10 @@ records (declared.py, `SUBJECTS`):
   SOFR over the period and states the result as an annualised actual/360
   rate;
 - **the SOFR Index**: kind `index_level`, its level an `index` value based at
-  1.00000000 on 2 April 2018, as the NY Fed defines it; no convention.
+  1.00000000 on 2 April 2018, as the NY Fed defines it; its convention the
+  one it compounds, the money market's -- each day's SOFR accrues on an
+  actual/360 basis, simple, compounded day by day -- since the lake keeps
+  no rate without one.
 
 **Business date** the effective date, as the NY Fed states it; **valid from
 and until** New York's day for it (`day_time_zone` America/New_York, ending
@@ -107,7 +110,7 @@ def to_rate(
             business_date=published.day,
             published_ns=published_ns,
             raw_key=raw_key,
-            convention=None if subject.kind == "index_level" else rates.MONEY_MARKET,
+            convention=rates.MONEY_MARKET,
             volume=volume(published.volume_billions) if fixing else None,
             percentiles=(published.percentiles or None) if fixing else None,
         )
