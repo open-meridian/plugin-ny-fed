@@ -8,8 +8,7 @@ The NY Fed publishes reference rates: five daily fixings with their
 percentiles and volume, three averages and an index, each its own record.
 What a rates-only plugin never presents -- every case about a price, a trade,
 a quote or an outcome, `an-exact-price` and `a-want-recorded-against` about
-closes from ruling 537, and the feed delay, about latency until contract v28
-(ruling 518) -- is the SDK's `RATES_NOT_PRESENTED` (ruling 538), with its
+closes from ruling 537 -- is the SDK's `RATES_NOT_PRESENTED` (ruling 538), with its
 reasons; from 0.32.2 it leaves liveness to each plugin. Not presented besides, each with its reason:
 
 - the rates slice's curve cases -- a curve for a date, a tenor not
@@ -20,6 +19,10 @@ reasons; from 0.32.2 it leaves liveness to each plugin. Not presented besides, e
   yet); the plugin takes Monday to Friday and reads none;
 - `asks-for-a-settlement-date`: it records rates as published.
 
+From contract v28 the feed delay is presented (required again, ruling 518):
+each rate the plugin states a published time for (one seen to appear) has
+its age at the edge recorded and reported; the
+chains, filings and quality cases are the SDK's list too.
 `records-a-datasets-liveness` is presented: each answer of the API is the
 dataset's sign of life (RecordLiveness), which confirms the rates in force,
 a poll as the SDK's `Wants.liveness` has it. What `an-exact-price` and `a-want-recorded-against`
@@ -36,7 +39,7 @@ from pathlib import Path
 from typing import Any
 
 from meridian.plugin.v1 import operations_pb2 as ops
-from meridian.roles.data.testing import RATES_NOT_PRESENTED, Lake
+from meridian.roles.data.testing import RATES_NOT_PRESENTED, Lake, feed_delay
 from meridian.suites import ANSWERED_BY_SDK, Recorder, run
 
 from conftest import DATASET, SOFR, Clock, Revised, feed, lake, resolver, want
@@ -105,6 +108,17 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
         )
         await recorder.receive(want_withdrawn=work.on_withdrawn)
 
+    async def delayed(recorder: Recorder, latency: Any) -> None:
+        # Contract v28 (ruling 518): a rate seen to appear is stated
+        # published when first read (feed.py), so it has an age at the edge,
+        # recorded and reported; a rate read with no published time has none.
+        clock = Clock()
+        work = feed(tmp / "delayed", store(recorder), clock, Revised(clock))
+        work.wants.latency = latency
+        await work.check()
+        clock.move(minutes=5)
+        await work.check()
+
     async def alive(recorder: Recorder) -> None:
         # The API answering, a check stating nothing new: still a sign of life.
         clock = Clock()
@@ -124,6 +138,7 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
         "a-standing-want-withdrawn": withdrawn,
         "reads-its-datasets-licences": licences,
         "records-a-datasets-liveness": alive,
+        "reports-its-feed-delay": feed_delay(delayed),
     }
 
 
@@ -131,9 +146,9 @@ def test_the_data_suite_passes(tmp_path: Path) -> None:
     report = run("data", producers(tmp_path), not_presented=NOT_PRESENTED, instance_id="ny-fed")
     assert report.passed, report.failures
     assert sorted(report.not_presented) == sorted(NOT_PRESENTED)
-    # The plugin's own eight, and the cases every suite holds that the SDK
+    # The plugin's own nine, and the cases every suite holds that the SDK
     # answers (contract v24's two, v26's event group).
-    assert len(report.passed_cases) == 8 + len(ANSWERED_BY_SDK)
+    assert len(report.passed_cases) == 9 + len(ANSWERED_BY_SDK)
     assert report.answered_by_sdk == list(ANSWERED_BY_SDK)
 
 

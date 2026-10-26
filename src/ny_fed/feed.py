@@ -58,7 +58,7 @@ from zoneinfo import ZoneInfo
 
 import meridian
 from meridian.plugin.v1 import operations_pb2 as ops
-from meridian.roles import data
+from meridian.roles import Latency, data
 from meridian.roles.data import rates
 
 from .api import Api, Fetched, Unreachable, path_for, utc_now
@@ -201,6 +201,11 @@ class Feed:
         self.now = now
         self.status = Status(mode=api.mode, started_at=now())
         self.wants = data.Wants(plugin, (NYFED_RATES,), clock_ns=self.now_ns)
+        # Contract v28 (ruling 518): each rate recorded unasked or for a
+        # standing want has its age at the edge recorded, its feed delay,
+        # reported every 10 seconds (`__main__`, `Latency.run`).
+        self.latency = Latency(plugin, clock_ns=self.now_ns)
+        self.wants.latency = self.latency
         self.rates = rates.Feed(
             _Asking(plugin, self.status),
             SYMBOL_SOURCE,
