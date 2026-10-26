@@ -1,7 +1,7 @@
 # plugin-ny-fed
 
 The Federal Reserve Bank of New York's reference rates as an Open Meridian
-data plugin, in Python on the open-meridian SDK (0.32.2, contract v27). It
+data plugin, in Python on the open-meridian SDK (0.33.1, contract v28). It
 runs beside a sidecar in a Meridian deployment and puts each business day's
 SOFR, EFFR, OBFR, TGCR and BGCR fixings, the SOFR 30, 90 and 180-day
 averages and the SOFR Index into the deployment's lake as rates. What it may

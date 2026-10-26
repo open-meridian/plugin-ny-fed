@@ -8,12 +8,12 @@ SOFR, EFFR, OBFR, TGCR and BGCR, the SOFR 30, 90 and 180-day averages and
 the SOFR Index -- into a deployment's lake as rates, each business day's
 when the NY Fed publishes it, with its history from 2000. It reads the NY
 Fed's markets data API, and holds the `data` role, a data plugin. This is
-release 0.1.0, not released yet. How to set it up and use it is in
+release 0.2.0. How to set it up and use it is in
 [docs/](docs/README.md); how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
-It is built on the SDK it pins, `open-meridian==0.32.2`, which declares
-contract v27, the lake's rates slice (meridian-design
+It is built on the SDK it pins, `open-meridian==0.33.1`, which declares
+contract v28; the lake's rates slice is contract v27's (meridian-design
 `spec/a-public-rates-and-filings-data-plugin.md`, "plugin-ny-fed").
 
 ## What it records
@@ -51,8 +51,10 @@ v27 on the plugin's own conversion. The rates cases the NY Fed presents pass
 (a fixing with its percentiles, a same-day revision, an index level), with
 liveness, wants, licences and misses. Every other case is about something
 the NY Fed never states -- curves and tenors, prices, trades, quotes, venues,
-outcomes -- or about latency (from contract v28), and is not presented, with
-why. `an-exact-price` and `a-want-recorded-against`
+outcomes, and from contract v28 option chains, filings and quotes' quality
+-- and is not presented, with why. Its feed delay is presented (ruling
+518): a rate it sees appear is stated published when first read, and its
+age at the edge is recorded and reported. `an-exact-price` and `a-want-recorded-against`
 are about closes from SDK 0.32.1 (ruling 537): with every other case a
 rates-only plugin never presents, they are the SDK's `RATES_NOT_PRESENTED`
 (ruling 538).
