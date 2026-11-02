@@ -25,8 +25,8 @@ def client(tmp_path: Path) -> PageClient:
         await work.check()
         clock.at = datetime(2026, 10, 23, 12, 5, tzinfo=UTC)
         await work.check()
-        await work.on_want(want("w-0925", [SOFR], day="2026-09-25"))
-        await work.on_want(want("w-standing", [SOFR], standing=True))
+        await work.on_observations_wanted(want("w-0925", [SOFR], day="2026-09-25"))
+        await work.on_observations_wanted(want("w-standing", [SOFR], standing=True))
 
     asyncio.run(run())
     hold(work)

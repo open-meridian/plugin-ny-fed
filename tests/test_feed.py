@@ -238,7 +238,7 @@ async def test_a_want_recorded_against(tmp_path: Path) -> None:
     """`a-want-recorded-against`'s question asked of rates."""
     plugin = lake()
     work = feed(tmp_path, plugin)
-    await work.on_want(want("w-0925", [SOFR], day="2026-09-25"))
+    await work.on_observations_wanted(want("w-0925", [SOFR], day="2026-09-25"))
     [sent] = plugin.on("RecordRates")
     assert sent.want_id == "w-0925"
     [one] = sent.rates
@@ -252,7 +252,9 @@ async def test_a_range_wanted_for_two_records(tmp_path: Path) -> None:
     index = "INS-SOFRINDEX"
     start = day_start_ns(date(2026, 9, 21))
     until = day_start_ns(date(2026, 9, 26))
-    await work.on_want(want("w-week", [SOFR, index], valid_from_ns=start, valid_until_ns=until))
+    await work.on_observations_wanted(
+        want("w-week", [SOFR, index], valid_from_ns=start, valid_until_ns=until)
+    )
     [sent] = plugin.on("RecordRates")
     assert sorted({r.meta.business_date for r in sent.rates}) == [
         "2026-09-21",
@@ -268,10 +270,12 @@ async def test_what_the_nyfed_never_states_is_declined(tmp_path: Path) -> None:
     plugin = lake()
     work = feed(tmp_path, plugin)
     asked = len(work.api.asked)  # type: ignore[attr-defined]
-    await work.on_want(want("w-sat", [SOFR], day="2026-10-17"))
-    await work.on_want(want("w-1999", [SOFR], day="1999-12-31"))
-    await work.on_want(want("w-price", [SOFR], day="2026-10-16", data_type="meridian.v1.Price"))
-    await work.on_want(want("w-other", ["INS-ELSE"], day="2026-10-16"))
+    await work.on_observations_wanted(want("w-sat", [SOFR], day="2026-10-17"))
+    await work.on_observations_wanted(want("w-1999", [SOFR], day="1999-12-31"))
+    await work.on_observations_wanted(
+        want("w-price", [SOFR], day="2026-10-16", data_type="meridian.v1.Price")
+    )
+    await work.on_observations_wanted(want("w-other", ["INS-ELSE"], day="2026-10-16"))
     reasons = {d.want_id: d.reason for d in plugin.on("DeclineWant")}
     assert reasons == {
         "w-sat": ops.UNANSWERED_REASON_SOURCE_SILENT,
@@ -286,7 +290,7 @@ async def test_a_holiday_asked_is_source_silent(tmp_path: Path) -> None:
     plugin = lake()
     work = feed(tmp_path, plugin)
     # Columbus Day, 12 October 2026: the NY Fed publishes no rate for it.
-    await work.on_want(want("w-holiday", [SOFR], day="2026-10-12"))
+    await work.on_observations_wanted(want("w-holiday", [SOFR], day="2026-10-12"))
     [declined] = plugin.on("DeclineWant")
     assert declined.reason == ops.UNANSWERED_REASON_SOURCE_SILENT
     assert plugin.on("RecordRates") == []
@@ -295,7 +299,7 @@ async def test_a_holiday_asked_is_source_silent(tmp_path: Path) -> None:
 async def test_the_latest_and_a_standing_want(tmp_path: Path) -> None:
     plugin = lake()
     work = feed(tmp_path, plugin)
-    await work.on_want(want("w-latest", [SOFR, "INS-SOFRINDEX"], standing=True))
+    await work.on_observations_wanted(want("w-latest", [SOFR, "INS-SOFRINDEX"], standing=True))
     sent = [b for b in plugin.on("RecordRates") if b.want_id == "w-latest"]
     assert [sorted(r.meta.business_date for r in b.rates) for b in sent] == [
         ["2026-10-22", "2026-10-23"]

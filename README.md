@@ -8,12 +8,13 @@ SOFR, EFFR, OBFR, TGCR and BGCR, the SOFR 30, 90 and 180-day averages and
 the SOFR Index -- into a deployment's lake as rates, each business day's
 when the NY Fed publishes it, with its history from 2000. It reads the NY
 Fed's markets data API, and holds the `data` role, a data plugin. This is
-release 0.2.0. How to set it up and use it is in
+release 0.3.0. How to set it up and use it is in
 [docs/](docs/README.md); how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
-It is built on the SDK it pins, `open-meridian==0.33.4`, which declares
-contract v28; the lake's rates slice is contract v27's (meridian-design
+It is built on the SDK it pins, `open-meridian==0.35.1`, which declares
+contract v29 (its work one class for its role, registered with
+`meridian.run`); the lake's rates slice is contract v27's (meridian-design
 `spec/a-public-rates-and-filings-data-plugin.md`, "plugin-ny-fed").
 
 ## What it records

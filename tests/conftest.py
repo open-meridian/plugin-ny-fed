@@ -118,13 +118,16 @@ class Appearing(SyntheticApi):
 
 
 def feed(tmp: Path, plugin: Any = None, now: Any = None, api: Any = None) -> Feed:
-    """The plugin's work on the stand-in lake and the recorded answer."""
+    """The plugin's work on the stand-in lake and the recorded answer: its
+    data role class bound to the lake (open-meridian 0.35)."""
     clock = now or Clock()
-    return Feed(
-        plugin if plugin is not None else lake(),
-        api or SyntheticApi(clock),
-        RawStore(tmp),
-        now=clock,
+    held = plugin if plugin is not None else lake()
+    return held.bind(
+        Feed(
+            api or SyntheticApi(clock),
+            RawStore(tmp),
+            now=clock,
+        )
     )
 
 
