@@ -12,7 +12,7 @@ release 0.3.0. How to set it up and use it is in
 [docs/](docs/README.md); how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
-It is built on the SDK it pins, `open-meridian==0.35.1`, which declares
+It is built on the SDK it pins, `open-meridian==0.35.2`, which declares
 contract v29 (its work one class for its role, registered with
 `meridian.run`); the lake's rates slice is contract v27's (meridian-design
 `spec/a-public-rates-and-filings-data-plugin.md`, "plugin-ny-fed").
