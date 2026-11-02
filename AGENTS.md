@@ -1,7 +1,7 @@
 # plugin-ny-fed
 
 The Federal Reserve Bank of New York's reference rates as an Open Meridian
-data plugin, in Python on the open-meridian SDK (0.33.1, contract v28). It
+data plugin, in Python on the open-meridian SDK (0.35.2, contract v29). It
 runs beside a sidecar in a Meridian deployment and puts each business day's
 SOFR, EFFR, OBFR, TGCR and BGCR fixings, the SOFR 30, 90 and 180-day
 averages and the SOFR Index into the deployment's lake as rates. What it may
@@ -31,7 +31,11 @@ per publisher's feed).
   records in batches of at most 500 (W10.4), states a published time only
   for a rate it saw appear, backfills the NY Fed's history once, and answers
   the lake's wants or declines them per subject (W10.7), through the SDK's
-  `meridian.roles.data.Wants`.
+  `meridian.roles.data.Wants`. `Feed` is the data role's class
+  (open-meridian 0.35: each role one class), its acts made on itself;
+  `__main__.py`'s `Lake` adds its lifecycle (`on_settings`, and its loops
+  in `run`) and registers it with `meridian.run`. Its tests bind it to the
+  suite's `Recorder` (`recorder.bind(...)`, `recorder.hear(...)`).
 - `src/ny_fed/schedule.py` says when the current rates are read next: every
   five minutes in the publication windows, hourly otherwise.
 - `src/ny_fed/raw.py` keeps every answer stating something new as received
@@ -147,7 +151,7 @@ running plugin to it: a version registering anything its upload did not
 declare is refused, naming the difference. So:
 
 - declare everything in `Declaration(...)` and call
-  `meridian.connect(declaration=DECLARATION)` alone;
+  `meridian.run(declaration=DECLARATION, roles=[...])` with it alone;
 - keep the interface's port fixed (`PORT`), never read from the
   environment;
 - keep `declaration.py` importing every module that declares a page or a

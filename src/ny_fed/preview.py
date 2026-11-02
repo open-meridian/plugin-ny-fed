@@ -80,7 +80,7 @@ def recorder() -> Lake:
 
 
 def _feed() -> Feed:
-    return Feed(recorder(), SyntheticApi(lambda: AT), RawStore(), now=lambda: AT)
+    return recorder().bind(Feed(SyntheticApi(lambda: AT), RawStore(), now=lambda: AT))
 
 
 async def synthetic_feed() -> Feed:
@@ -89,9 +89,9 @@ async def synthetic_feed() -> Feed:
     await feed.check()
     await feed.backfill()
     sofr = instrument_of("SOFR")
-    await feed.on_want(_want("want-0925", sofr, "2026-09-25"))
-    await feed.on_want(_want("want-1017", sofr, "2026-10-17"))
-    await feed.on_want(_want("want-standing", sofr, standing=True))
+    await feed.on_observations_wanted(_want("want-0925", sofr, "2026-09-25"))
+    await feed.on_observations_wanted(_want("want-1017", sofr, "2026-10-17"))
+    await feed.on_observations_wanted(_want("want-standing", sofr, standing=True))
     return feed
 
 

@@ -86,7 +86,7 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
         async def produce(recorder: Recorder) -> None:
             work = feed(tmp / "wanted", store(recorder))
             recorder.answer("ObservationsWanted", lambda _: message)
-            await recorder.receive(observations_wanted=work.on_want)
+            await recorder.hear(work)
 
         return produce
 
@@ -106,7 +106,7 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
             "WantWithdrawn",
             lambda _: ops.WantWithdrawnEvent(want_id="w-standing", dataset=DATASET),
         )
-        await recorder.receive(want_withdrawn=work.on_withdrawn)
+        await recorder.hear(work)
 
     async def delayed(recorder: Recorder, latency: Any) -> None:
         # Contract v28 (ruling 518): a rate seen to appear is stated

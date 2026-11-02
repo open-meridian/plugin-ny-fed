@@ -163,11 +163,11 @@ class Status:
 
 
 class _Asking:
-    """The plugin, as the SDK's rates helpers call it, keeping why each
-    record did not resolve for the Records tab."""
+    """The data role's class, as the SDK's rates helpers call it, keeping why
+    each record did not resolve for the Records tab."""
 
-    def __init__(self, plugin: Any, status: Status) -> None:
-        self._plugin = plugin
+    def __init__(self, role: Any, status: Status) -> None:
+        self._plugin = role
         self._status = status
 
     def __getattr__(self, name: str) -> Any:
@@ -183,31 +183,30 @@ class _Asking:
         return found
 
 
-class Feed:
-    """The plugin's work, on its typed operations -- `plugin` is the
-    connected `meridian.Plugin`, or the suite's `Recorder` in its tests --
-    reading the API, resolving, recording, backfilling, answering wants."""
+class Feed(data.Role):
+    """The plugin's data role class (open-meridian 0.35: each role one
+    class), its acts made on itself -- registered with `meridian.run`, or
+    bound to the suite's `Recorder` in its tests -- reading the API,
+    resolving, recording, backfilling, answering wants."""
 
     def __init__(
         self,
-        plugin: Any,
         api: Api,
         raw: RawStore,
         now: Callable[[], datetime] = utc_now,
     ) -> None:
-        self.plugin = plugin
         self.api = api
         self.raw = raw
         self.now = now
         self.status = Status(mode=api.mode, started_at=now())
-        self.wants = data.Wants(plugin, (NYFED_RATES,), clock_ns=self.now_ns)
+        self.wants = data.Wants(self, (NYFED_RATES,), clock_ns=self.now_ns)
         # Contract v28 (ruling 518): each rate recorded unasked or for a
         # standing want has its age at the edge recorded, its feed delay,
-        # reported every 10 seconds (`__main__`, `Latency.run`).
-        self.latency = Latency(plugin, clock_ns=self.now_ns)
+        # reported every 10 seconds (`__main__`'s `Lake.run`, `Latency.run`).
+        self.latency = Latency(self, clock_ns=self.now_ns)
         self.wants.latency = self.latency
         self.rates = rates.Feed(
-            _Asking(plugin, self.status),
+            _Asking(self, self.status),
             SYMBOL_SOURCE,
             wants=self.wants,
             day_zone=DAY_TIME_ZONE,
@@ -454,12 +453,14 @@ class Feed:
 
     # ── Wants ───────────────────────────────────────────────────────────
 
-    async def on_want(self, heard: meridian.Heard[ops.ObservationsWantedEvent]) -> None:
+    async def on_observations_wanted(
+        self, heard: meridian.Heard[ops.ObservationsWantedEvent]
+    ) -> None:
         """Record what the lake wants of the plugin's dataset, or decline it
         (the SDK's `Wants.hear`, answered by `answer`)."""
         await self.wants.hear(heard, self.answer)
 
-    async def on_withdrawn(self, heard: meridian.Heard[ops.WantWithdrawnEvent]) -> None:
+    async def on_want_withdrawn(self, heard: meridian.Heard[ops.WantWithdrawnEvent]) -> None:
         """A standing want withdrawn: no longer kept current."""
         self.wants.withdraw(heard.message.want_id)
         log.info("standing want %s withdrawn", heard.message.want_id)
