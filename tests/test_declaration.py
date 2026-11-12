@@ -5,7 +5,7 @@ from __future__ import annotations
 from meridian.plugin.v1 import operations_pb2 as ops
 
 from ny_fed.declaration import DECLARATION
-from ny_fed.declared import ATTRIBUTION, NYFED_RATES_DATASET
+from ny_fed.declared import ATTRIBUTION, NYFED_RATES_DATASET, TERMS
 
 
 def test_one_daily_dataset_of_rates() -> None:
@@ -21,12 +21,13 @@ def test_one_daily_dataset_of_rates() -> None:
     assert not NYFED_RATES_DATASET.venue_id and not NYFED_RATES_DATASET.aggregator
 
 
-def test_the_nyfeds_terms_are_not_one_persons() -> None:
-    licence = NYFED_RATES_DATASET.licence_default
-    assert licence is not None
-    assert licence.kept and licence.derived_use and licence.display
-    assert licence.derived_use_terms == "not_restricted"
-    assert not licence.personal_use and licence.retention_days == 0
+def test_the_nyfeds_terms_in_words_and_a_gap_asked_again() -> None:
+    # Contract 30 (ruling 1032): the NY Fed's terms described, no licence; the
+    # API serves every past day, so a gap is asked again (W10.14).
+    assert NYFED_RATES_DATASET.terms_and_pricing == TERMS and len(TERMS) <= 2000
+    assert "personal or business purposes" in TERMS and "DTCC Solutions" in TERMS
+    assert NYFED_RATES_DATASET.gap_recovery == "backfill"
+    assert not NYFED_RATES_DATASET.sessions_calendar_id
     assert "Terms of Use posted at newyorkfed.org" in ATTRIBUTION
 
 

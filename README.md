@@ -8,12 +8,13 @@ SOFR, EFFR, OBFR, TGCR and BGCR, the SOFR 30, 90 and 180-day averages and
 the SOFR Index -- into a deployment's lake as rates, each business day's
 when the NY Fed publishes it, with its history from 2000. It reads the NY
 Fed's markets data API, and holds the `data` role, a data plugin. This is
-release 0.3.0. How to set it up and use it is in
+release 0.4.0. How to set it up and use it is in
 [docs/](docs/README.md); how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
-It is built on the SDK it pins, `open-meridian==0.35.2`, which declares
-contract v29 (its work one class for its role, registered with
+It is built on the SDK it pins, `open-meridian==0.36.0`, which declares
+contract 30 (its terms in words and how a gap in it is recovered; from
+contract v29 its work one class for its role, registered with
 `meridian.run`); the lake's rates slice is contract v27's (meridian-design
 `spec/a-public-rates-and-filings-data-plugin.md`, "plugin-ny-fed").
 
@@ -68,10 +69,12 @@ Not legal advice; read the NY Fed's own words before relying on them.
   [Terms of Use](https://www.newyorkfed.org/privacy/termsofuse) allow
   downloading, storing and redistributing its content, with the notice that
   the rates are subject to them, its disclaimer, and no more restrictive
-  terms downstream. So the dataset's default licence is kept, with derived
-  use and display, no limit on retention, and not one person's terms; the
+  terms downstream. The dataset says so in words (contract 30, ruling 1032:
+  `declared.TERMS`), shown on Data sources, and declares no licence; the
   notice is shown on the Datasets page. A deployment's licence on its Data
-  sources page confirms or replaces it.
+  sources page is the one enforced; until one is set, the lake keeps the
+  rows and reads every use right restrictively. A gap is asked again of the
+  API (`gap_recovery` `backfill`).
 - **DTCC data.** SOFR and BGCR are calculated using data licensed to the NY
   Fed by DTCC Solutions LLC.
 - **No endorsement.** This project is not affiliated with the Federal

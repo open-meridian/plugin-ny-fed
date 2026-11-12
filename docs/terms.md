@@ -46,9 +46,9 @@ passed on:
 > or endorse it, and has no liability for your use. SOFR and BGCR are
 > calculated using data licensed to the New York Fed by DTCC Solutions LLC.
 
-The dataset's default licence declares the rates kept, with derived use and
-display; the notice itself is shown on the Datasets page and belongs in
-your licence's note until the licence carries it.
+The dataset describes these terms in words on the Data sources page and
+declares no licence; the notice itself is shown on the Datasets page and
+belongs in your licence's note until the licence carries it.
 
 The dataset's licence on your Data sources page is what your deployment
 records; neither the plugin nor this page says whether your use meets

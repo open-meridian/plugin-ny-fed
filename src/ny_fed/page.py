@@ -203,9 +203,7 @@ def datasets_read(status: Status, feed: Feed | None) -> records.DatasetsRead:
         feed.wants if feed is not None else None,
         "Yes: no key needed" if answered else "Not asked yet",
     )
-    served = [
-        replace(s, default_terms="kept, derived use, display; the NY Fed's notice") for s in served
-    ]
+    # Its row's terms are the dataset's own words (contract 30, ruling 1032).
     return records.DatasetsRead(
         served=served,
         wants=list(data.want_rows(feed.wants)) if feed is not None else [],

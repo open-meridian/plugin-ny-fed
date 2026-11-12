@@ -27,17 +27,15 @@ lake wants it:
   bond-market closes) is curated on a miss and none is held yet, so the
   dataset declares none, and the plugin takes Monday to Friday (feed.py);
 - no venue: the rates are the NY Fed's, as administrator, no venue's;
-- the licence the NY Fed's terms suggest (§7): kept, derived use not
-  restricted and display, with no limit on retention, and not one person's
-  terms. The NY Fed's notice and disclaimer, the attribution its terms ask
-  for (`ATTRIBUTION`), are stated on the Datasets page and in docs/terms.md.
-  SDK 0.32.2 writes the licence's attribution fields (redistribution
-  allowed with attribution, this notice, copyright with citation required,
-  no more restrictive terms), but core a5da59a's upload does not carry them
-  yet, so a version declaring them is refused at registration: they are
-  declared once core carries them. A deployment's licence confirms or replaces the default on
-  the Data sources page; the plugin says nothing of whether a deployment
-  meets anyone's terms.
+- its terms and pricing (contract 30, ruling 1032) the NY Fed's, in plain
+  words (`TERMS`), and no licence declared: free, use and redistribution
+  allowed under its Terms of Use with its notice and disclaimer. The notice
+  itself (`ATTRIBUTION`) is also stated on the Datasets page and in
+  docs/terms.md. A deployment's licence, set on the Data sources page, is
+  the one enforced; the plugin says nothing of whether a deployment meets
+  anyone's terms;
+- a gap asked again (`gap_recovery` `backfill`, W10.14): the markets data
+  API serves every past day.
 
 **The subjects** are the platform's seeded referential records (contract
 v27, W1.1; the spec's §2), each named by the NY Fed's code as a
@@ -52,7 +50,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 
-from meridian import DatasetDeclaration, DatasetLicence
+from meridian import DatasetDeclaration
 from meridian.declaration import RecordKind
 
 from .raw import DEFAULT_WINDOW_DAYS, RESPONSES
@@ -83,6 +81,19 @@ ATTRIBUTION = (
     "calculated using data licensed to the New York Fed by DTCC Solutions LLC."
 )
 
+#: The NY Fed's terms, in plain words (contract 30, ruling 1032), as
+#: docs/terms.md summarises its Terms of Use.
+TERMS = (
+    "The New York Fed's public markets data API: free, no key or account. Its Terms of Use "
+    "grant a non-exclusive licence to use, copy, store and distribute its content and make "
+    "derivative works, for personal or business purposes; modified content is labelled as "
+    "modified and never attributed to the New York Fed, and content passed on carries the "
+    "same terms. Whoever uses or distributes the reference rates includes its notice that "
+    "they are subject to those Terms of Use and that the New York Fed is not responsible for "
+    "their publication by the distributor and has no liability for their use. SOFR and BGCR "
+    "are calculated using data licensed to the New York Fed by DTCC Solutions LLC."
+)
+
 NYFED_RATES_DATASET = DatasetDeclaration(
     key=NYFED_RATES,
     vendor=VENDOR,
@@ -90,12 +101,8 @@ NYFED_RATES_DATASET = DatasetDeclaration(
     modes=["push", "pull"],
     cadence=CADENCE,
     history=HISTORY,
-    licence_default=DatasetLicence(
-        kept=True,
-        derived_use_terms="not_restricted",
-        derived_use=True,
-        display=True,
-    ),
+    terms_and_pricing=TERMS,
+    gap_recovery="backfill",
     day_time_zone=DAY_TIME_ZONE,
     day_end_minute=DAY_END_MINUTE,
 )
