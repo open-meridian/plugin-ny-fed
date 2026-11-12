@@ -20,11 +20,11 @@ Its settings, in the dashboard's Settings form:
 
 On the deployment's **Data sources** page (deployment admins):
 
-1. **License `<instance>:nyfed_rates`.** The catalogue's default is kept,
-   with derived use and display, no limit on retention, and not one
-   person's terms. The NY Fed asks for its notice and disclaimer with the
-   rates (see Terms); record that in your licence's note. Confirm the
-   default, or set your own, with a note saying why.
+1. **License `<instance>:nyfed_rates`.** The dataset describes the NY
+   Fed's terms in words and declares no licence. The NY Fed asks for its
+   notice and disclaimer with the rates (see Terms); record that in your
+   licence's note. Set the licence, with a note saying why; until one is
+   set, the lake keeps the rows and reads every use right restrictively.
 2. **Entitle** each plugin that reads rates: your reporting, portfolio or
    signal plugin, and the analytics component.
 3. **Priority**, where another dataset also states one of these records,

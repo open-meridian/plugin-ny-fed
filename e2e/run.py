@@ -18,8 +18,8 @@ harness's plugins first; standard library only.
    `read_datasets` answer what the pages show, under the data role's names,
    and core's `dashboard__list_datasets` lists `ny-fed:nyfed_rates` as the
    catalogue declares it: rates, push and pull, daily, New York's day ending
-   at midnight, no calendar, its licence default kept, derived use not
-   restricted, display.
+   at midnight, no calendar, the NY Fed's terms in words and a gap asked
+   again (`backfill`), no licence declared (contract 30, ruling 1032).
 4. Licensed and entitled at the Data sources page: the reader is entitled.
 5. Read back: SOFR of 22 October is a fixing of 3.90 per cent, act/360
    simple, its four percentiles and USD 2,945,000,000,000 of volume, version
@@ -195,14 +195,13 @@ def run():
                                 if d["dataset"] == DATASET},
                    "step 3, core never listed the dataset")
     entry = listed.get(DATASET, {}).get("catalogue_entry", {})
-    terms = entry.get("licence_default", {})
-    # The licence's attribution fields wait for core to carry them (the
-    # notice is on Datasets): the default as the SDK writes it today.
+    # Contract 30 (ruling 1032): the NY Fed's terms in words, no licence
+    # declared, and a gap asked again of the API.
     must(entry.get("modes") == ["push", "pull"] and entry.get("day_time_zone") == "America/New_York"
          and not entry.get("day_end_minute") and entry.get("cadence") == 86400
          and not entry.get("calendar_id") and entry.get("data_types") == ["meridian.v1.Rate"]
-         and terms.get("kept") is True and terms.get("derived_use_terms") == "not_restricted"
-         and terms.get("display") is True and terms.get("personal_use") is False,
+         and "Terms of Use" in entry.get("terms_and_pricing", "")
+         and entry.get("gap_recovery") == "backfill" and "licence_default" not in entry,
          f"step 3, core lists the catalogue as declared: {listed.get(DATASET)}")
 
     # 4. Licensed and entitled.

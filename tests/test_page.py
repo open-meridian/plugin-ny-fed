@@ -69,7 +69,8 @@ def test_datasets_lists_the_dataset_and_every_record(client: PageClient) -> None
     text = client.get(DATASETS, "admin").text
     assert text.index("<h2>Served</h2>") < text.index("<h2>Wants</h2>")
     assert text.index('<th class="wide-only">Lag</th>') < text.index("<h2>Records</h2>")
-    assert "ny-fed:nyfed_rates" in text and "the NY Fed&#39;s notice" in text
+    # Its terms in words (contract 30, ruling 1032).
+    assert "ny-fed:nyfed_rates" in text and "personal or business purposes" in text
     assert "Not licensed yet" in text
     assert text.count("<tr data-code=") == len(CODES)
     assert "<om-pager>" in text and "Kept current" in text
