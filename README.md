@@ -12,7 +12,7 @@ release 0.4.0. How to set it up and use it is in
 [docs/](docs/README.md); how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
-It is built on the SDK it pins, `open-meridian==0.37.0`, which declares
+It is built on the SDK it pins, `open-meridian==0.37.1`, which declares
 contract 30 (its terms in words and how a gap in it is recovered; from
 contract v29 its work one class for its role, registered with
 `meridian.run`); the lake's rates slice is contract v27's (meridian-design
